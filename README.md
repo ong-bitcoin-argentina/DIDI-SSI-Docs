@@ -79,8 +79,6 @@ DIDI Issuer Backend
 **Brief**
 > El issuer permite a distintas entidades autorizadas por el didi-server a generar y emitir
 certificados que podrán ser accedidos por los dueños de los mismos desde didi.
->
-> 
 
 **Repo**
 - https://github.com/ong-bitcoin-argentina/DIDI-SSI-Issuer-Module
@@ -104,10 +102,12 @@ Permite generar modelos de certificados genéricos, fijando los datos que conten
 
 **Certificados**
 
-Permite crear, modificar, emitir y revocar certificados partiendo de un template previamente creado en **Templates**.
+Permite crear, modificar, emitir y revocar certificados partiendo de un template previamente creado en 
+
+**Templates**
 
 
-Features
+**Features**
 - Almacena la información de modelos de certificados y certificados a ser emitidos.
 - Emisión de una credencial a partir de un modelo de certificado
 
