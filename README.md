@@ -49,6 +49,12 @@ Notas importantes
 - The process of *verification* includes checking that: the credential (or presentation) conforms to the specification; the proof method is satisfied; and, if present, the status check succeeds.
 - This specification is constrained to verifying *verifiable credentials* and *verifiable presentations* regardless of their usage. Validating *verifiable credential*s or *verifiable presentations* is outside the scope of this specification.
 
+JWTs
+----
+
+- https://jwt.io/introduction/
+- https://jwt.io/
+
 uPort
 =====
 
