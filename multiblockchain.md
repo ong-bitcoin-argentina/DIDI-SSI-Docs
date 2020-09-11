@@ -1,48 +1,51 @@
-# Cambios en arquitectura de DIDI para soportar Multiblockchain
+# Descripción para la implementación de multiblockchain en DIDI
 
-## Ruteo
+## Networks soportadas
+- rsk
+- lacchain
+- bfa
+- ethereum (opcional)
 
-Los dids deberán indicar a qué blockchain debe rutearse la verificación de credenciales, la delegación de issuers, etc., relacionados a los mismos. En otras palabras, en dónde encontrar el [DID registry de uPort](https://github.com/uport-project/ethr-did-registry).
+# Funcionalidades
 
-Ejemplos:
-- `did:ethr:rsk:xxx` se dirije a RSK
-- `did:ethr:lacchain:xxx` se dirije a Lacchain
+## Alta y delegación
+1. El Issuer indica por variable de entorno la blockchain (URL y address de SC) elegida.
+2. El Issuer se da de alta en DIDI,donde su did va acompañado por el prefijo que indica la blockchain elegida. Además envía el nombre con el que DIDI va a identificarlo (y que aparecerá en las credenciales) que DIDI mostrará a terceros.
+3. DIDI almacena en su base de datos el DID del Issuer, el nombre, y el estado de la transacción sobre la blockchain.
+4. DIDI genera una transacción (addDelegate) que lo agrega como delegate válido (basado en el did pasado por el issuer)
+5. DIDI modifica el estado de la transacción para ese issuer.
 
-En caso de no especificar se elige la de RSK (ej. `did:ethr:xxx`, con comportamiento que se tiene actualmente).
+## Revocación
 
-### Modelo en DB
+Existe una forma de revocación de un issuer, que se realiza on-chain.
 
-```
-Blockchain Config
------------------
-- Nombre
-- URL
-- ContractAddress
-```
+Para ello:
+1. DIDI realiza llama a la función revokeDelegate del SC de uPort.
+2. DIDI marca a dicho issuer como revocado.
 
-### Módulos/Clases a modificar
-- BlockchainService (en DIDI e Issuer)
+## Validación de la delegación on-chain
 
-### Aclaraciones
-- En todas las blockchain se utilizará el mismo [DID registry de uPort](https://github.com/uport-project/ethr-did-registry).
-- NO es necesaria el alta de un DID específico para cada blockchain.
+Con el did almacenado en la DB ejecuto una función del BlockchainService.
 
-## Alta de Issuer
+# Archivos afectados por el refactor
 
-Se genera una entidad nueva en la DB a fin de soportar mejor la emisión de credenciales desde diferentes issuers.
+## Principales
+- DIDI-SSI-Issuer-Module/issuer-back/services/BlockchainService.js
+- DIDI-SSI-Server/services/BlockchainService.js
 
-```
-Issuer
-------
-- Nombre
-- DID
-- Blockchain
-```
+## Secundarios
+- DIDI-SSI-Server/services/MouroService.js
+- DIDI-SSI-Server/routes/IssuerRoutes.js
+- DIDI-SSI-Server/constants/Constants.js
+- DIDI-SSI-mouro_didi/src/lib/schemaMgr.ts
+- DIDI-SSI-mouro_didi/src/lib/blockChainMgr.ts
+- DIDI-SSI-Issuer-Module/issuer-back/services/MouroService.js
 
-Cada issuer elige una de las blockchains soportadas, al momento de darse de alta.
-
-# Dudas
-
-- BFA
-  - ¿Qué tecnología utiliza?
-  - ¿Es posible deployar el SC de uPort?
+# Tareas
+- Debe crease un modelo en DIDI para los issuers dados de alta (name - did - status).
+- Crear un DIDI-SSI-BlockchainManager (con código actual de DIDI, Issuer y Mouro).
+- Pensar la arquitectura e interfaz de ese nuevo repositorio para que soporte, de forma abstracta, multiblochain
+  - Se crearán distintos servicios específicos de cómo pedir gas, etc., para cada blockchain soportada.
+  - El usuario del BlockchainManager eligirá qué modulo específico utilizará.
+  - El default será la actual testnet de RSK.
+  - Debe solucionarse el actual problema de los recorridos sobre eventos on-chain.
