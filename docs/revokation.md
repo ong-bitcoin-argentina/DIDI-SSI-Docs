@@ -1,3 +1,8 @@
+---
+id: revokation
+title: Flujos de revocación de credenciales
+---
+
 # Flujo actual de revocación desde API de Issuer
 
 En Issuer (`DELETE /:id`)

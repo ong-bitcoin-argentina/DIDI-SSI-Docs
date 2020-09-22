@@ -1,3 +1,7 @@
+---
+id: multiblockchain
+title: Descripción para la implementación de multiblockchain en DIDI
+---
 # Descripción para la implementación de multiblockchain en DIDI
 
 ## Networks soportadas

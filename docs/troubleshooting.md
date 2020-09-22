@@ -1,3 +1,8 @@
+---
+id: troubleshooting
+title: Diagnósticos sobre el comportamiento
+---
+
 # Troubleshooting
 
 Esta documentación indica cómo realizar ciertos tipos de búsquedas, para diagnósticos sobre el comportamiento de la plataforma DIDI.
