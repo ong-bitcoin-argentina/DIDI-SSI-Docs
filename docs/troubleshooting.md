@@ -3,11 +3,11 @@ id: troubleshooting
 title: Diagnósticos sobre el comportamiento
 ---
 
-# Troubleshooting
+## Troubleshooting
 
 Esta documentación indica cómo realizar ciertos tipos de búsquedas, para diagnósticos sobre el comportamiento de la plataforma DIDI.
 
-## Credenciales dado un DID
+### Credenciales dado un DID
 
 1. Conectarse a MongoDB de DIDI Server (se recomienda utilizar algún cliente, como Studio 3T)
 2. En la colección certificados realizar una query como la siguiente:

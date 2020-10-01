@@ -1,17 +1,17 @@
 module.exports = {
-  title: 'AIDI',
+  title: 'ai·di',
   tagline: 'Identidad digital para la inclusión',
   url: 'https://docs.didi.org.ar',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'DIDI', // Usually your GitHub org/user name.
-  projectName: 'AIDI', // Usually your repo name.
+  projectName: 'ai·di', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'AIDI',
+      title: 'ai·di',
       logo: {
-        alt: 'AIDI',
+        alt: 'ai·di',
         src: 'img/logo.png',
       },
       items: [

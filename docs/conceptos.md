@@ -2,16 +2,14 @@
 id: conceptos
 title: Estándares sobre identidad digital y credenciales verificables
 ---
-Estándares sobre identidad digital y credenciales verificables
-==============================================================
 
-# Páginas web
+## Páginas web
 
 - DIDs: https://www.w3.org/TR/did-core
 - DID methods: https://w3c-ccg.github.io/did-method-registry
 - Verified Credentials: https://www.w3.org/TR/vc-data-model
 
-# Conceptos más importantes
+## Conceptos más importantes
 
 - **Decentralized identifier / DID**: a portable URL-based identifier associated with an entity.
 - **Decentralized identifier document / DID document**: a document that is accessible using a verifiable data registry and contains information related to a specific decentralized identifier, _such as the associated repository and public key information_.
@@ -31,14 +29,14 @@ Estándares sobre identidad digital y credenciales verificables
 - **Verification**: the evaluation of whether a verifiable credential or verifiable presentation is an authentic and timely statement of the issuer or presenter, respectively.
 - **Verifier**: a role an entity performs by receiving one or more verifiable credentials, optionally inside a verifiable presentation for processing. Other specifications might refer to this concept as a relying party.
 
-# Issues declarados
+## Issues declarados
 
 - https://github.com/w3c/did-core/issues
 - https://github.com/w3c-ccg/did-method-registry/issues
 - https://github.com/w3c/vc-data-model/issues
 
 
-# Notas importantes
+## Notas importantes
 
 - A *verifiable presentation* expresses data from one or more *verifiable credentials*, and is packaged in such a way that the authorship of the data is verifiable.
 - A *holder* is usually, but not always, a subject of the *verifiable credentials* they are holding. *Holders* store their credentials in *credential repositories*.
@@ -50,30 +48,30 @@ Estándares sobre identidad digital y credenciales verificables
 - The process of *verification* includes checking that: the credential (or presentation) conforms to the specification; the proof method is satisfied; and, if present, the status check succeeds.
 - This specification is constrained to verifying *verifiable credentials* and *verifiable presentations* regardless of their usage. Validating *verifiable credential*s or *verifiable presentations* is outside the scope of this specification.
 
-# JWTs
+## JWTs
 
 - https://jwt.io/introduction/
 - https://jwt.io/
 
-# uPort
+## uPort
 
-## Brief
+### Brief
 
 > uPort is a platform for user centric identity and communication. The platform currently consists of our mobile app, Ethereum smart contracts and number of open protocols for signed messages and message flow.
 
-## Especificación de protocolos uPort
+### Especificación de protocolos uPort
 
 - https://github.com/uport-project/specs/
 
-## Especificación de identidad digital sobre Ethereum
+### Especificación de identidad digital sobre Ethereum
 
 Uport sigue también este estándard de identidad digital sobre Ethereum
 
 - https://github.com/ethereum/EIPs/issues/1056
 
-# Proyecto DIDI
+## Proyecto DIDI
 
-## DIDI Issuer Backend
+### DIDI Issuer Backend
 
 **Brief**
 > El issuer permite a distintas entidades autorizadas por el didi-server a generar y emitir
@@ -96,7 +94,7 @@ certificados que podrán ser accedidos por los dueños de los mismos desde didi.
 - Almacena la información de modelos de certificados y certificados a ser emitidos.
 - Emisión de una credencial a partir de un modelo de certificado
 
-## DIDI Issuer Frontend
+### DIDI Issuer Frontend
 
 **Repo**
 - https://github.com/ong-bitcoin-argentina/DIDI-SSI-Issuer-Module
@@ -108,7 +106,7 @@ certificados que podrán ser accedidos por los dueños de los mismos desde didi.
 "ethr-did-resolver": "^2.2.0"
 ```
 
-## DIDI Credential Viewer/Validator
+### DIDI Credential Viewer/Validator
 
 **Repo**
 - https://github.com/ong-bitcoin-argentina/DIDI-SSI-JWT_Validator_Viewer
@@ -124,7 +122,7 @@ certificados que podrán ser accedidos por los dueños de los mismos desde didi.
 "ethr-did": "^1.1.0"
 ```
 
-## DIDI App SDK
+### DIDI App SDK
 
 **Repo**
 - https://github.com/ong-bitcoin-argentina/DIDI-SSI-app_sdk
@@ -139,7 +137,7 @@ certificados que podrán ser accedidos por los dueños de los mismos desde didi.
 "uport-credentials": "^1.2.3"
 ```
 
-## DIDI Mobile App
+### DIDI Mobile App
 
 **Repo**
 
@@ -153,7 +151,7 @@ certificados que podrán ser accedidos por los dueños de los mismos desde didi.
 "uport-credentials": "^1.2.3"
 ```
 
-## DIDI Mouro (Trust Graph Service)
+### DIDI Mouro (Trust Graph Service)
 
 **Repo**
 - https://github.com/ong-bitcoin-argentina/DIDI-SSI-mouro_didi
@@ -171,7 +169,7 @@ certificados que podrán ser accedidos por los dueños de los mismos desde didi.
 "uport-credentials": "^1.2.3"
 ```
 
-## DIDI Server
+### DIDI Server
 
 **Repo**
 - https://github.com/ong-bitcoin-argentina/DIDI-SSI-Server
@@ -187,9 +185,9 @@ certificados que podrán ser accedidos por los dueños de los mismos desde didi.
 "uport-credentials": "^1.2.3"
 ```
 
-# Libs de uPort de bajo nivel
+## Libs de uPort de bajo nivel
 
-## did-jwt-vc
+### did-jwt-vc
 
 **Repo**
 - https://github.com/decentralized-identity/did-jwt-vc
@@ -203,7 +201,7 @@ certificados que podrán ser accedidos por los dueños de los mismos desde didi.
 - Creating a Verifiable Presentation
 - Verifying a Verifiable Presentation
 
-## did-jwt
+### did-jwt
 
 **Repo**
 - https://github.com/decentralized-identity/did-jwt
@@ -216,7 +214,7 @@ certificados que podrán ser accedidos por los dueños de los mismos desde didi.
 - Decode a JWT
 - Verify a JWT
 
-## Javascript DID Resolver
+### Javascript DID Resolver
 
 **Repo**
 - https://github.com/decentralized-identity/did-resolver
@@ -234,7 +232,7 @@ certificados que podrán ser accedidos por los dueños de los mismos desde didi.
 - Caching responses
 - Implementing a DID method
 
-## Ethr DID Resolver
+### Ethr DID Resolver
 
 **Repo**
 - https://github.com/decentralized-identity/ethr-did-resolver
@@ -255,7 +253,7 @@ certificados que podrán ser accedidos por los dueños de los mismos desde didi.
 - Resolving a DID document
 - Multi-network configuration
 
-## Ethereum DID Registry
+### Ethereum DID Registry
 
 **Repo**
 - https://github.com/uport-project/ethr-did-registry
@@ -279,9 +277,9 @@ certificados que podrán ser accedidos por los dueños de los mismos desde didi.
 - Revoking Attributes
 - Reading attributes
 
-# Libs de más alto nivel usadas de forma incompleta
+## Libs de más alto nivel usadas de forma incompleta
 
-## Ethr DID
+### Ethr DID
 
 **Repo**
 - https://github.com/uport-project/ethr-did
@@ -304,7 +302,7 @@ certificados que podrán ser accedidos por los dueños de los mismos desde didi.
 **Documentación**
 - https://developer.uport.me/ethr-did/docs/guides/index
 
-## uPort Credentials
+### uPort Credentials
 
 **Repo**
 - https://github.com/uport-project/uport-credentials
@@ -330,9 +328,9 @@ certificados que podrán ser accedidos por los dueños de los mismos desde didi.
 Usos:
 - Firma de JWTs en SDK, DIDI y Mouro
 
-# Libs de más alto nivel no usadas
+## Libs de más alto nivel no usadas
 
-## uPort Transports
+### uPort Transports
 
 **Brief**
 > The uport-transports library is comprised of a loosely coupled collection of functions called transports—used to set up communication channels between an app and a client; additionally, a set of transport-related utility functions are also available in this library.
@@ -346,7 +344,7 @@ Usos:
 **Documentación**
 - https://developer.uport.me/categories/uport-transports
 
-## uPort Connect
+### uPort Connect
 
 **Repo**
 - https://github.com/uport-project/uport-connect
@@ -373,7 +371,7 @@ Usos:
 
 Parte de estos features los realiza el SDK de DIDI
 
-## uPort Mobile (app)
+### uPort Mobile (app)
 
 **App**
 - https://play.google.com/store/apps/details?id=com.uportMobile&hl=en
@@ -395,23 +393,23 @@ Parte de estos features los realiza el SDK de DIDI
 
 Parte de estos features los realiza el SDK de DIDI y la DIDI app
 
-## Flujos propuestos por uPort
+### Flujos propuestos por uPort
 
-### Create verification
+#### Create verification
 
 - https://developer.uport.me/credentials/createverification
 
 > Creating and issuing verifications from your server application is a simple matter of utilizing uport-credentials to create them and setting up a few endpoints to facilitate the flow.
 
 
-### Request verification
+#### Request verification
 
 > Requesting verifications with your server application is the same process as creating a disclosure
 
 - https://developer.uport.me/credentials/requestverification
 
 
-## Ethereum transaction request
+### Ethereum transaction request
 
 - https://developer.uport.me/credentials/transactions
 
