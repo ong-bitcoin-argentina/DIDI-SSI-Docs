@@ -8,10 +8,10 @@ import styles from './styles.module.css';
 
 function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const { siteConfig = {} } = context;
   return (
     <Layout
-      title="AIDI | Identidad Digital para la Inclusión"
+      title="ai·di | Identidad Digital para la Inclusión"
       description="Identidad Digital para la Inclusión">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">

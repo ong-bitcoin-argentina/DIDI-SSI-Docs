@@ -3,8 +3,6 @@ id: multiblockchain-scripts
 title: Pruebas con scripts (para diseño de interfaz de BlockchainManager)
 ---
 
-# Pruebas con scripts (para diseño de interfaz de BlockchainManager)
-
 El propósito de estas pruebas es definir la interfaz del BlockchainManager.
 
 Arrancamos por RSK, y luego la volvemos multiblockchain.
