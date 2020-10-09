@@ -1,6 +1,10 @@
 module.exports = {
   someSidebar: {
     "Conceptos importantes": ['conceptos'],
-    Developers: ['contribuciones', 'troubleshooting', 'revokation',{"Multiblockchain": ['multiblockchain', 'multiblockchain-scripts'],}]
+    Developers: [
+      'contribuciones', 
+      { "Troubleshooting": ["troubleshooting", "troubleshooting-rsk"]}, 
+      'revokation',
+      {"Multiblockchain": ['multiblockchain', 'multiblockchain-scripts'],}]
   },
 };
