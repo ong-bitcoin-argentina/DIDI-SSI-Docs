@@ -17,6 +17,11 @@ Los Issues y reportes son muy valiosos para este proyecto.
 * ¿Tenés un caso de uso? No dudes en crear un issue para compartirlo y ponerte en contacto con el equipo
 
 ## Resolver bug o agregar funcionalidades
+
+### Branches
+* Los desarrollos actuales se llevan acabo desde `develop`. Todas las nuevas features deben salir desde este branch y volver a mergearse a `develop`
+* Los releases se mergean a `master` una vez estabilizadas.
+
 ### Proveedores 
 * Crear una nueva rama(branch) para el feature desde `develop`
 * Revisa y resuelve conflictos con otras ramas.
