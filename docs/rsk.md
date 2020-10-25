@@ -45,3 +45,7 @@ curl --request POST \
 	"id":1
 }'
 ```
+
+### Nodo no accesible desde el exterior
+- Comprobar que los puertos se encuentran abiertos en la VM
+- Comprobar cors y hosts en el archivo de confifugración `/etc/rsk/testnet.conf` dentro del Docker.
