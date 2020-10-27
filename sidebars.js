@@ -1,5 +1,6 @@
 module.exports = {
   someSidebar: {
+    "Visión general": ["overview"],
     "Conceptos importantes": ['conceptos'],
     "Contribuciones": ['contribuciones', 'code-fo-conduct'],
     Developers: [
