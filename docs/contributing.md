@@ -21,6 +21,7 @@ Los Issues y reportes son muy valiosos para este proyecto.
 ### Branches
 * Los desarrollos actuales se llevan acabo desde `develop`. Todas las nuevas features deben salir desde este branch y volver a mergearse a `develop`
 * Los releases se mergean a `master` una vez estabilizadas.
+* Una vez realizado el Pull Request, no realizar force-push para mantener la línea de correcciones.
 
 ### Proveedores 
 * Crear una nueva rama(branch) para el feature desde `develop`
