@@ -8,6 +8,7 @@ title: Estándares sobre identidad digital y credenciales verificables
 - DIDs: https://www.w3.org/TR/did-core
 - DID methods: https://w3c-ccg.github.io/did-method-registry
 - Verified Credentials: https://www.w3.org/TR/vc-data-model
+- Implementation guide: https://www.w3.org/TR/vc-imp-guide/
 
 ## Conceptos más importantes
 
