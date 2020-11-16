@@ -10,6 +10,7 @@ DIDI propone construir una identidad digital que certifique y valide datos socia
 
 DIDI se materializa en la App Mobile ai·di (portadocumentos digital) y un portal web para la emisión y revocación de credenciales.
 
+![Credenciales](./images/credenciales.png)
 
 ## ¿Por qué blockchain?
 Blockchain o Cadena de bloques, puede ser entendido como un libro mayor contable (Ledger) o una base de datos en la que se registran múltiples transacciones. Es distribuido, es decir que se encuentra repartido en numerosas máquinas donde la información se encuentra replicada de forma idéntica, encriptada y verificada. Su tecnología de contabilidad distribuida (DLT), hace posible crear una identidad digital auto soberana que garantiza los requisitos de:
@@ -77,7 +78,7 @@ _Las credenciales se emiten en formato **jwt**, por lo que pueden ser fácilment
 ## Consideraciones Técnicas
 Para evaluar los tiempos de desarrollo necesarios para avanzar en la emisión automática de credenciales se debe tener en cuenta que **DIDI proveerá**:
 
-* Solución compuesta por el módulo emisor que deberá darse de alta en un servidor a cargo de la entidad emisora. Se contará con el código fuente y la documentación para una correcta implementación. (Se estima un tiempo de 3 a 4 horas) [ver [Arquitectura](www.didi.org.ar) para más detalle]
+* Solución compuesta por el módulo emisor que deberá darse de alta en un servidor a cargo de la entidad emisora. Se contará con el código fuente y la documentación para una correcta implementación. (Se estima un tiempo de 3 a 4 horas) [ver [Arquitectura](https://didi.org.ar) para más detalle]
 
 * API Issuer: utilizada para la creación, emisión y revocación de las credenciales.
 
@@ -94,5 +95,4 @@ El **emisor** deberá resolver:
 ![Diagrama-de-Flujo](./images/diagrama-de-flujo.png)
 
 ## Arquitectura
-_**¡Requiere Actualización!**_
 ![Arquitectura](./images/arquitectura.png)
