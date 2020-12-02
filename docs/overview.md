@@ -9,14 +9,14 @@ En última instancia, el proyecto empodera a los individuos mejorando el control
 
 ## SSI
 En 2016, Christopher Allen estableció los 10 principios para la identidad auto-soberana que se han convertido en una referencia en el campo. Estos principios son:
-- **Acceso:** los usuarios deben tener acceso a sus propios datos.
-- **Consentimiento:** los usuarios deben aceptar previamente el uso de su identidad por terceros.
-- **Control:** los usuarios deben poder controlar sus identidades.
-- **Existencia:** los usuarios deben tener una existencia independiente.
-- **Interoperabilidad:** las identidades deben poder utilizarse ampliamente.
-- **Minimización:** la divulgación de reclamaciones debe reducirse.
-- **Persistencia:** las identidades deben ser duraderas. Protección: los derechos de los usuarios deben ser protegidos.
-- **Portabilidad:** la información y los servicios sobre identidad deben ser portables.
-- **Transparencia:** los sistemas y algoritmos deben ser transparentes.
+- **Acceso:** Los usuarios deben tener acceso a sus propios datos.
+- **Consentimiento:** Los usuarios deben aceptar previamente el uso de su identidad por terceros.
+- **Control:** Los usuarios deben poder controlar sus identidades.
+- **Existencia:** Los usuarios deben tener una existencia independiente.
+- **Interoperabilidad:** Las identidades deben poder utilizarse ampliamente.
+- **Minimización:** La divulgación de reclamaciones debe reducirse.
+- **Persistencia:** Las identidades deben ser duraderas. Protección: los derechos de los usuarios deben ser protegidos.
+- **Portabilidad:** La información y los servicios sobre identidad deben ser portables.
+- **Transparencia:** Los sistemas y algoritmos deben ser transparentes.
 
 Estos principio nos dan una idea general de que la identidad auto-soberana se basa en repositorios personales portables en los que podemos almacenar y administrar todas nuestras claves  privadas, nuestros autenticadores y nuestros tokens y credenciales digitales de manera segura y confiable.
