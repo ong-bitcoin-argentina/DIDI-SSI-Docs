@@ -23,7 +23,8 @@ Representa todas las interacciones con blockchain. Hay una relación de 1:1 con 
 #### api/services/credential.js
 Emite credenciales por haber iniciado la ronda y por haber terminado a los participantes.
 
-#### api/services/guest.jsUn día le escribi a una chica que tenía tu número ejar los register, login y verificaciones de cuentas.
+#### api/services/guest.js
+Se encarga de manejar los register, login y verificaciones de cuentas.
 
 #### api/services/notification.js
 Se encarga de enviar a los user y marcar como leídas las notificaiones. Parte de esta funcionalidad se encuentra en api/helpers/notfications/
