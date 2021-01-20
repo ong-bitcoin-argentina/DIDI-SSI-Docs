@@ -14,6 +14,7 @@ module.exports = {
               "arquitectura-mouro",
               "arquitectura-issuer",
               "arquitectura-server",
+              "arquitectura-ronda",
             ]
           },
         ]
