@@ -3,21 +3,19 @@ id: arquitectura-mouro
 title: Mouro
 ---
 
-DIDI-SSI-Mouro es un fork de uPort Trust Graph Server (aka EdgeServer). Es responsabl de almacenar los datos y la información del usuario.
+DIDI-SSI-Mouro es un fork de uPort Trust Graph Server (aka EdgeServer). Es responsable de almacenar los datos y la información del usuario.
 
+Mouro es un gestor de base de datos, el cual se comunica con una base de datos SQLite para almacenar las credenciales emitidas por el didi-server y los distintos issuers. Permite el acceso a los usuarios de DIDI a sus credenciales y verifica el estado de los mismos.
 
-Mouro es un gestor de base de datos, el cual se comunica con una base de datos ‘sqlite ’
-para almacenar las credenciales emitidas por el didi-server y los distintos issuers, permite el
-acceso a los usuarios de didi a sus credenciales y verificar el estado de los mismos.
-
-Otra dato interesente, es que se crea un archivo de DB SQLite por cada did.
+Otra dato interesante, es que se crea un archivo de DB SQLite por cada DID.
 
 ![Mouro](./images/didi-ssi-mouro.png)
 > Los diferentes colores en las líneas no tienen un signifaco específico. Es para seguír con mayor facilidad las dependencias. **A -> B** representa que el módulo **A** utiliza a **B**
 
 ### Llamadas
 #### Types
-Las query cuentan con 2 tipos. 
+Las query cuentan con 2 tipos.
+
 ##### Edge
 Representa una credencial emitida.
 ```
@@ -36,14 +34,15 @@ type Edge {
 ```
 
 ##### Identity
-Contiene un identificador decentralizado.
+Contiene un identificador descentralizado.
 ```
 type Identity {
   did: String!
 }
 ```
 #### Headers
-las llamadas requieren de la generación de un token vacío firmado porel DID del usuario que realiza la llamada, este se ingresa en la sección “HTTPHEADERS” y tiene el siguiente formato:
+Las llamadas requieren de la generación de un token vacío firmado por el DID del usuario que realiza la llamada, este se ingresa en la sección “HTTPHEADERS” y tiene el siguiente formato:
+
 ```json
 {  
   "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NkstUiJ9.eyJpYXQiOjE1ODAyMjY0NzEsImV4cCI6MTU4MDIyNjk3MS4xMTIsImlzcyI6ImRpZDpldGhyOjB4REZBNTE4Y2VhRWQxYmZlNmY3MDRFNTFBMThkNGJCMEExNDcxNGNkMiJ9.NdihoBy4uEMsCLaitRIETQ-fnB2SGJLyxfApked_42T9lZHJkIcGRQmxweOaer-UuG3A4R7-LOQYN76MivlQCgA" 
@@ -52,7 +51,7 @@ las llamadas requieren de la generación de un token vacío firmado porel DID de
 
 #### Query
 ##### me
-Retorna la info del usuario a partir del token:
+Retorna la información del usuario a partir del token:
 
 `me: Identity`
 
@@ -65,7 +64,7 @@ query {
 }
 ```
 ##### hash
-Dado un DID, retorna el hash de recuperación desde swarm
+Dado un DID, retorna el hash de recuperación desde Swarm.
 
 `hash(did: String): String`
 
@@ -76,7 +75,7 @@ query {
 }
 ```
 
-Si el user que relealiza la llamada es DIDI-SERVER. Este puede obtener cuaquier hash, en cambio, un user solo puede obtener su propio hash de swarm.
+Si el user que realiza la llamada es DIDI-SERVER, este puede obtener cualquier hash. En cambio, un user solo puede obtener su propio hash de Swarm.
 
 ##### edgeByJwt
 Obtiene un certificado a partir de su jwt y did.  
@@ -91,7 +90,7 @@ query {
   }
 }
 ```
-Si el user que relealiza la llamada es DIDI-SERVER. Este puede obtener cuaquier Edge(credencial), en cambio, un user solo puede obtener su propio Edge.
+Si el user que relealiza la llamada es DIDI-Server. Este puede obtener cuaquier Edge(credencial), en cambio, un user solo puede obtener su propio Edge.
 
 ##### findEdges
 Retorna los certificados emitidos a toDID.
