@@ -3,7 +3,7 @@ id: arquitectura-ronda
 title: Ronda
 ---
 
-DIDI-SSI-Ronda es un monorepo que cuenta con una API desarrollada con Express.js, una app mobile desarrollada en React Native y 2 Smart Contracts desarrollados en Solidity. 
+DIDI-SSI-Ronda es un monorepo que cuenta con una API desarrollada con Express.js, una app mobile desarrollada en React Native y 2 Smart Contracts desarrollados en Solidity.
 Esta aplicación interactua con DIDI-Server para obtener información de los usuarios de ai·di a fin de loguearse e integrarse entre sí.
 
 ![Ronda](./images/didi-ssi-ronda.png)
@@ -27,7 +27,7 @@ Emite credenciales a los participantes de las rondas, tanto al iniciarse (con fe
 Se encarga de manejar los register, login y verificaciones de cuentas.
 
 #### api/services/notification.js
-Se encarga de enviar a los user y marcar como leídas las notificaiones. Parte de esta funcionalidad se encuentra en api/helpers/notfications/
+Se encarga de enviar a los user y marcar como leídas las notificaciones. Parte de esta funcionalidad se encuentra en api/helpers/notfications/
 
 #### api/services/participant.js
 Representa la interacción de un participante con una ronda. Con cada interacción, envía una notificación al administrador de la ronda.
