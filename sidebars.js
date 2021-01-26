@@ -1,5 +1,5 @@
 module.exports = {
-  someSidebar: {
+  sidebar: {
     "Visión general": ["overview"],
     "Conceptos importantes": ['conceptos'],
     Producto: ['aidi-definiciones', 'producto-emisores',],
@@ -17,6 +17,7 @@ module.exports = {
               "arquitectura-ronda",
             ]
           },
+          "delegation"
         ]
       },
 
