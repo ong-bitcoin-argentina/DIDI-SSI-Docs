@@ -4,8 +4,9 @@ title: Overview de ai·di
 ---
 
 ## Arquitectura
+Se describen a continuación los componentes más significativos de Proyecto DIDI. Se encuentra una descripción con más detalles de cada componente en la sección **Descripción técnica**.
 
-![Arquitectura](./images/arquitectura.png)
+![Componentes arquitectura](./images/didi-ssi-arquitectura-componentes.png)
 
 ### DIDI Issuer Backend
 **Brief**
@@ -55,3 +56,16 @@ uPort Trust Graph Server (aka EdgeServer)
 
 **Repo**
 - https://github.com/ong-bitcoin-argentina/DIDI-SSI-Server
+
+
+### Entorno de ejecución
+
+El entorno de ejecución de los componentes encuentra descirpto mediante el siguiene diagrama
+
+![Componentes deploytment](./images/didi-ssi-arquitectura-deployment.png)
+
+El **visor de credenciales** y el **Issuer front** son 2 aplicaciones para navegador, desarrolladas en React. Por otro lado, la **wallet ai·di** y **ronda** se encuentran desarrolladas en React Native, con soporte solo para Android.
+
+El **backend del visor de credenciales**, el **Issuer back**, **DIDI server**, **ronda server** y **Mouro** se encuentran dockerizados, corriendo en una máquina virtual Azure.
+
+En cuanto a **Blockchain**, se encuentran en uso los **uPort ethr registry** en **RSK**, **BFA** y **LacChain**. Además **ronda** utiliza **RIF Name Service** y **Ronda Registry** en **RSK**.

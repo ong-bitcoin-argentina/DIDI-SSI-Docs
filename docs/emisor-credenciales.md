@@ -42,7 +42,7 @@ _Las credenciales se emiten en formato **jwt**, por lo que pueden ser fácilment
 ## Consideraciones Técnicas
 Para evaluar los tiempos de desarrollo necesarios para avanzar en la emisión automática de credenciales se debe tener en cuenta que **DIDI proveerá**:
 
-* Solución compuesta por el módulo emisor que deberá darse de alta en un servidor a cargo de la entidad emisora. Se contará con el código fuente y la documentación para una correcta implementación. (Se estima un tiempo de 3 a 4 horas) [ver [Arquitectura](https://didi.org.ar) para más detalle]
+* Solución compuesta por el módulo emisor que deberá darse de alta en un servidor a cargo de la entidad emisora. Se contará con el código fuente y la documentación para una correcta implementación. (Se estima un tiempo de 3 a 4 horas) [ver [Arquitectura](localhost:3000/docs/arquitectura-overview) para más detalle]
 
 * API Issuer: utilizada para la creación, emisión y revocación de las credenciales.
 
@@ -59,4 +59,4 @@ El **emisor** deberá resolver:
 ![Diagrama-de-Flujo](./images/diagrama-de-flujo.png)
 
 ## Arquitectura
-![Arquitectura](./images/arquitectura.png)
+![Arquitectura](./images/didi-ssi-arquitectura-componentes.png)
