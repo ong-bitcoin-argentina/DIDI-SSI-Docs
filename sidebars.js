@@ -15,9 +15,9 @@ module.exports = {
               "arquitectura-issuer",
               "arquitectura-server",
               "arquitectura-ronda",
+              "delegation",
             ]
           },
-          "delegation"
         ]
       },
 
