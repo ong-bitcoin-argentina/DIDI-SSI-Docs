@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'ai·di',
+  title: 'Proyecto DIDI',
   tagline: 'Identidad digital para la inclusión',
   url: 'https://docs.didi.org.ar',
   baseUrl: '/',

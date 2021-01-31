@@ -58,19 +58,6 @@ El término "credencial" puede implicar cualquier conjunto (a prueba de manipula
 
 Toda credencial contiene un conjunto de afirmaciones o *claims* sobre el sujeto de la credencial, es decir, sobre el titular. Estas afirmaciones son realizadas por un emisor.
 
-Para ser una credencial, las afirmaciones deben ser verificables de alguna manera. Esto significa que un verificador debe ser capaz de determinar lo siguiente:
-
-- Quién ha emitido la credencial
-- Que no ha sido manipulada desde su emisión
-- Que no ha caducado ni ha sido revocada
-- En el caso de las credenciales físicas, esto se consigue mediante alguna prueba de autenticidad incrustada directamente en la propia credencial, como un chip o un holograma. También puede hacerse comprobando directamente con el emisor que la credencial es válida, precisa y actual. Pero este proceso de verificación manual puede ser difícil y llevar mucho tiempo, una de las principales razones por las que existe un mercado negro mundial de credenciales falsificadas.
-
-Esto nos lleva a una de las ventajas fundamentales de las credenciales verificables: utilizando la criptografía e Internet, pueden verificarse digitalmente en segundos. Este proceso de verificación puede responder a las cuatro preguntas siguientes
-
-- ¿Está la credencial en un formato estándar y contiene los datos que necesita el verificador?
-- ¿Incluye una firma digital válida del emisor?
-- ¿Sigue siendo válida la credencial, es decir, no está caducada ni revocada?
-- Si procede, ¿proporciona la credencial (o su firma) una prueba criptográfica de que el titular de la credencial es el sujeto de la misma?
 
 ### Notas importantes
 
