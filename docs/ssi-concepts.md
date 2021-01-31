@@ -3,7 +3,23 @@ id: ssi-concepts
 title: SSI | Identidad Digital Autosoberana
 ---
 
-# Introducción
+# Introducción a la Identidad Autosoberana (SSI | Self Sovereign Identity)
+
+## Visión general
+En 2016, Christopher Allen estableció los 10 principios para la identidad auto-soberana que se han convertido en una referencia en el campo. Estos principios son:
+- **Acceso:** Los usuarios deben tener acceso a sus propios datos.
+- **Consentimiento:** Los usuarios deben aceptar previamente el uso de su identidad por terceros.
+- **Control:** Los usuarios deben poder controlar sus identidades.
+- **Existencia:** Los usuarios deben tener una existencia independiente.
+- **Interoperabilidad:** Las identidades deben poder utilizarse ampliamente.
+- **Minimización:** La divulgación de reclamaciones debe reducirse.
+- **Persistencia:** Las identidades deben ser duraderas. Protección: los derechos de los usuarios deben ser protegidos.
+- **Portabilidad:** La información y los servicios sobre identidad deben ser portables.
+- **Transparencia:** Los sistemas y algoritmos deben ser transparentes.
+
+Estos principio nos dan una idea general de que la identidad auto-soberana se basa en repositorios personales portables en los que podemos almacenar y administrar todas nuestras claves  privadas, nuestros autenticadores y nuestros tokens y credenciales digitales de manera segura y confiable.
+
+
 ## ¿Qué es la identidad digital autosoberana (SSI)?
 La identidad auto-soberana (SSI) es un movimiento digital que reconoce que los individuos deben sean los únicos dueños de su identidad, teniendo el control sobre cómo se comparten y utilizan sus datos personales.
 
@@ -36,19 +52,6 @@ SSI significa que el individuo o la organización (**holders**) gestiona los ele
 - **Validación / Validation**: es la seguridad de que una *credencial verificable* o una *presentación verificable*.
 - **Verificación / Verification**: es la evaluación de una *credencial verificable* o una *presentación verificable* es auténtica.
 
-## Notas importantes
-
-- A *verifiable presentation* expresses data from one or more *verifiable credentials*, and is packaged in such a way that the authorship of the data is verifiable.
-- A *holder* is usually, but not always, a subject of the *verifiable credentials* they are holding. *Holders* store their credentials in *credential repositories*.
-- A *verifiable credential* itself can be easily ported from one *repository* to another without the need to reissue the credential.
-- It is assumed the *verifiable credentials* remain with the *subject*, and if they are not, they were stolen by an attacker.
-- Certain types of *verifiable presentations* might contain data that is synthesized from, but do not contain, the original verifiable credentials.
-- If a single *verifiable credential* supports *selective disclosure*, then *holders* can present proofs of claims without revealing the entire *verifiable credential*.
-- *Issuers* can issue *verifiable credentials* that support *selective disclosure*.
-- The process of *verification* includes checking that: the credential (or presentation) conforms to the specification; the proof method is satisfied; and, if present, the status check succeeds.
-- This specification is constrained to verifying *verifiable credentials* and *verifiable presentations* regardless of their usage. Validating *verifiable credential*s or *verifiable presentations* is outside the scope of this specification.
-
-
 
 ## ¿Qué es una credencial verificable?
 El término "credencial" puede implicar cualquier conjunto (a prueba de manipulaciones) de información que alguna autoridad afirma que es verdadera sobre un individuo, y que le permite convencer a otros (que confían en esa autoridad) de estas verdades. Por ejemplo: un diploma expedido por una universidad demuestra que tienes un título educativo. Un pasaporte expedido por el gobierno de un país demuestra que eres un ciudadano.
@@ -69,6 +72,18 @@ Esto nos lleva a una de las ventajas fundamentales de las credenciales verificab
 - ¿Sigue siendo válida la credencial, es decir, no está caducada ni revocada?
 - Si procede, ¿proporciona la credencial (o su firma) una prueba criptográfica de que el titular de la credencial es el sujeto de la misma?
 
+### Notas importantes
+
+- Una **presentación verificable** (*verifiable presentation*) expresa data de una o más **credenciales verificables** (*verifiable credentials*), y esta armado de tal forma que la autenticidad de la información es verificable.
+- Un **titular** (*holder*) es usualmente, aunque no siempre, el sujeto de de la **credencial verificable** que poseen.
+ is usually, but not always, a subject of the *verifiable credentials* they are holding. Los **titulares** almacenan sus credenciales en **repositorios de credenciales** (*credential repositories*).
+- Una **credencial verificable** puede ser fácilmente portable de un **repositorio** a otro, sin la necesidad de re-emitir la credencial.
+- Se asume que una **credencial verificable** permanecen con el **sujeto** (*subject*), y de no ser así, que fueron robadas por un atacante.
+- Algunos tipos de **presentaciones verificables** pueden contener información que es sintesis de, pero no necesariamente contener, la credencial verificable original.
+- Si una credencial verificable soporta *selective disclosure*, entonces el **titular** puede presentar pruebas de las afirmaciones sin necesidad de revelar la totalidad de la credencial verificable.
+- Los **Emisores** (*Issuers*) pueden emitir una credencial verificable qu soporte un *selective disclosure*.
+- El proceso de **verificación** incluye la comprobación de que: la credencial (o presentación) se ajusta a la especificación; el método de prueba se satisface; y, si está presente, la comprobación de estado tiene éxito (credencial no expirada ni revocada).
+- Esta especificación se limita a verificar las *credenciales verificables* y las *presentaciones verificables* independientemente de su uso. La validación de *credenciales verificables* o de *presentaciones verificables* queda fuera del ámbito de esta especificación.
 
 ## ¿Qué es un identificador descentralizado (DID) y un documento DID?
 El DID es un tipo de identificador que permite una identidad digital verificable y descentralizada. Un DID identifica de forma única a una entidad (como una persona u organización). La generación y el control de los DID recae en el propietario de la identidad, es decir, en el sujeto del DID (por ejemplo, a través de las claves privadas de una wallet).
