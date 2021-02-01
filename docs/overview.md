@@ -7,16 +7,5 @@ El proyecto tiene como objetivo desarrollar e implementar una solución de ident
 
 En última instancia, el proyecto empodera a los individuos mejorando el control que tienen sobre su información personal, permitiéndoles utilizarla como un instrumento para reducir su penalidad de pobreza, entendida como el mayor costo relativo que enfrentan las personas en situación de vulnerabilidad para acceder a bienes y servicios debido a la existencia de asimetría informativa. A través de la consolidación de una identidad digital relevante, accesible y confiable, el proyecto aspira a que la penalización de la pobreza de los habitantes de los barrios vulnerables se vea reducida y puedan mejorar sus oportunidades de inserción socioeconómica en la cuarta revolución industrial.
 
-## SSI
-En 2016, Christopher Allen estableció los 10 principios para la identidad auto-soberana que se han convertido en una referencia en el campo. Estos principios son:
-- **Acceso:** Los usuarios deben tener acceso a sus propios datos.
-- **Consentimiento:** Los usuarios deben aceptar previamente el uso de su identidad por terceros.
-- **Control:** Los usuarios deben poder controlar sus identidades.
-- **Existencia:** Los usuarios deben tener una existencia independiente.
-- **Interoperabilidad:** Las identidades deben poder utilizarse ampliamente.
-- **Minimización:** La divulgación de reclamaciones debe reducirse.
-- **Persistencia:** Las identidades deben ser duraderas. Protección: los derechos de los usuarios deben ser protegidos.
-- **Portabilidad:** La información y los servicios sobre identidad deben ser portables.
-- **Transparencia:** Los sistemas y algoritmos deben ser transparentes.
-
-Estos principio nos dan una idea general de que la identidad auto-soberana se basa en repositorios personales portables en los que podemos almacenar y administrar todas nuestras claves  privadas, nuestros autenticadores y nuestros tokens y credenciales digitales de manera segura y confiable.
+<a href="https://www.youtube.com/watch?v=mu2ZHxchISs" target="_blank"><img src="./images/didi-video.png" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>

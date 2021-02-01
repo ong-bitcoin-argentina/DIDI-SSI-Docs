@@ -1,9 +1,7 @@
 ---
 id: ssi-concepts
-title: SSI | Identidad Digital Autosoberana
+title: Introducción a la Identidad Autosoberana (SSI | Self Sovereign Identity)
 ---
-
-# Introducción a la Identidad Autosoberana (SSI | Self Sovereign Identity)
 
 ## Visión general
 En 2016, Christopher Allen estableció los 10 principios para la identidad auto-soberana que se han convertido en una referencia en el campo. Estos principios son:
