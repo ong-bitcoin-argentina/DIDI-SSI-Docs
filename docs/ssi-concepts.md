@@ -27,17 +27,7 @@ Todo el mundo (incluidas las empresas y las IoT) tiene diferentes relaciones o c
 
 SSI significa que el individuo o la organización (**holders**) gestiona los elementos que componen su identidad y controla el acceso a esas credenciales, de forma digital, teniendo uno o varios identificadores y pudiendo presentar *claims* relacionados con esos identificadores evitando la necesidad de pasar por un tercero como intermediario.
 
-
-## ¿Qué es un emisor, un titular y un validador?
-**Issuer o Emisor**: es el rol que una entidad que desempeña al realizar un *claim*, creando una *credencial verificable*. Por ejemplo: una institución financiera que emite credenciales a sus clientes sobre el estado de repago de un crédito.
-
-**Holder o Titular**: es el rol que se le asigna a un entidad al poseer una *credencial verificable*, teniendo el control del ciclo de vida de las credenciales emitidas, como compartirlas o eliminarlas. Por ejemplo, un emprendedor que tiene una credencial en su wallet.
-
-**Verifier o Validador**: es el rol que recibe una entidad al recibir una *credencial verificable* o una *presentación verificable* para su procesamiento. Verifica si la credencial compartida por un titular es válida (es decir, si la credencial proviene de un emisor de confianza, no revocada por el emisor). Por ejemplo, cualquier entidad con la que el holder haya decidido compartir su credencial.
-
-*Nota*: Una entidad puede desempeñar varios papeles. Por ejemplo, una organización puede ser emisor al mismo tiempo que puede ser validador.
-
-## Más conceptos importantes
+## Conceptos importantes
 - **Claim**: es una afirmación hecha sobre un asunto, persona o cosa.
 - **Credencial Verificable / Verifiable Credential / VC**: es un conjunto de uno o más *claims* realizado por un *emisor*.
 - **Documento DID / Decentralized identifier document / DID document**: es un documento que puede accederse desde un registro de datos verificables y contiene información sobre un *DID* específico.
@@ -52,12 +42,20 @@ SSI significa que el individuo o la organización (**holders**) gestiona los ele
 - **Validación / Validation**: es la seguridad de que una *credencial verificable* o una *presentación verificable*.
 - **Verificación / Verification**: es la evaluación de una *credencial verificable* o una *presentación verificable* es auténtica.
 
+## ¿Qué es un emisor, un titular y un validador?
+**Issuer o Emisor**: es el rol que una entidad que desempeña al realizar un *claim*, creando una *credencial verificable*. Por ejemplo: una institución financiera que emite credenciales a sus clientes sobre el estado de repago de un crédito.
+
+**Holder o Titular**: es el rol que se le asigna a un entidad al poseer una *credencial verificable*, teniendo el control del ciclo de vida de las credenciales emitidas, como compartirlas o eliminarlas. Por ejemplo, un emprendedor que tiene una credencial en su wallet.
+
+**Verifier o Validador**: es el rol que recibe una entidad al recibir una *credencial verificable* o una *presentación verificable* para su procesamiento. Verifica si la credencial compartida por un titular es válida (es decir, si la credencial proviene de un emisor de confianza, no revocada por el emisor). Por ejemplo, cualquier entidad con la que el holder haya decidido compartir su credencial.
+
+*Nota*: Una entidad puede desempeñar varios papeles. Por ejemplo, una organización puede ser emisor al mismo tiempo que puede ser validador.
+
 
 ## ¿Qué es una credencial verificable?
 El término "credencial" puede implicar cualquier conjunto (a prueba de manipulaciones) de información que alguna autoridad afirma que es verdadera sobre un individuo, y que le permite convencer a otros (que confían en esa autoridad) de estas verdades. Por ejemplo: un diploma expedido por una universidad demuestra que tienes un título educativo. Un pasaporte expedido por el gobierno de un país demuestra que eres un ciudadano.
 
 Toda credencial contiene un conjunto de afirmaciones o *claims* sobre el sujeto de la credencial, es decir, sobre el titular. Estas afirmaciones son realizadas por un emisor.
-
 
 ### Notas importantes
 
@@ -83,7 +81,6 @@ Un Documento DID contiene metada sobre el sujeto DID. Contiene información clav
 
 ## ¿Qué es un método DID?
 El método DID se utiliza para resolver un documento DID a DID. Para utilizar un DID con una red en particular, es necesario definir un método DID en una especificación de método DID. Un método DID especifica el conjunto de reglas sobre cómo se registra, resuelve, actualiza y revoca un DID en esa red específica.
-
 
 
 ### Para más información

@@ -8,7 +8,6 @@ module.exports = {
       {
         "Solución": [
           "arquitectura-overview",
-          "uport",
           {
             "Descripción técnica": [
               "arquitectura-mouro",
@@ -18,6 +17,7 @@ module.exports = {
               "delegation",
             ]
           },
+          "uport",
         ]
       },
 
