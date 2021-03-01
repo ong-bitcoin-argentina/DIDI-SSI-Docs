@@ -12,22 +12,22 @@ title: Estándares sobre identidad digital y credenciales verificables
 
 ## Conceptos más importantes
 
-- **Claim**: Una afirmación hecha sobre un asunto, persona o cosa.
+- **Afirmación / Claim**: Una afirmación hecha sobre un asunto, persona o cosa.
 - **Credencial Verificable / Verifiable Credential / VC**: Un conjunto de uno o más *claims* realizado por un *emisor*.
 - **Documento DID / Decentralized identifier document / DID document**: Un documento que puede accederse desde un registro de datos verificables y contiene información sobre un *DID* específico.
 - **Emisor / Issuer**: Un rol que una entidad desempeña al realizar un *claim* creando una *credencial verificable*.
 - **Firma digita / Digital signature**: Un esquema matemático para demostrar la autenticidad de un mensaje.
-- **Identificador Decenetralizado / Decentralized identifier / DID**: Un identificador portátil similar a una url, asoiciado a un asunto, persona o cosa.
-- **Registro de datos verificables / Verifiable data registry**: El rol que se le asigna a un sistema al mediar en la creación y verificación de identificadores, claves y datos relevantes necesarios para utilzar *credenciales verificables*.
-- **Titular / Holder**: Es el rol que se le asigna a un entidad al poseer una *credencial verificable*.
-- **Presentación verificable / Presentation / VP**: Son datos derivados de una o más *cerdenciales verificables*, emitidas por uno o más *emisores*.
-- **Proveedor de indentidad / Identity provider / IdP**: Es un sistema para crear, mantener y administrar las identidades digitales de los *holders*.
+- **Identificador Descenetralizado / Decentralized identifier / DID**: Un identificador portátil similar a una url, asociado a un asunto, persona o cosa.
+- **Registro de datos verificables / Verifiable data registry**: El rol que se le asigna a un sistema al mediar en la creación y verificación de identificadores, claves y datos relevantes necesarios para utilizar *credenciales verificables*.
+- **Titular / Holder**: Es el rol que se le asigna a una entidad al poseer una *credencial verificable*.
+- **Presentación verificable / Presentation / VP**: Son datos derivados de una o más *credenciales verificables*, emitidas por uno o más *emisores*.
+- **Proveedor de identidad / Identity provider / IdP**: Es un sistema para crear, mantener y administrar las identidades digitales de los *holders*.
 - **Repositorio / Repository**: Un programa, un *storage vault* o una *wallet* de *credenciales verificables*, que almacena y protege el acceso a las credenciales.
-- **Selective disclosure**: Es la capacidad de un *holder* para, de una forma granular, compartir información.
-- **User agent**: Un programa que media la comunicación entre *holders*, *issuers* y *verifier*.
+- **Divulgación selectiva / Selective disclosure**: Es la capacidad de un *holder* para, de una forma granular, compartir información.
+- **Agente de usuario / User agent**: Un programa que media la comunicación entre *holders*, *issuers* y *verifier*.
 - **Validación / Validation**: La seguridad de que una *credencial verificable* o una *presentación verificable*.
 - **Verificación / Verification**: La evaluación de una *credencial verificable* o una *presentación verificable* es auténtica.
-- **Verificador / Verifier**: Es el rol que recibe una entidad al recibir una *credencial verificable* o una *presentación verificable* para su orocesamiento.
+- **Verificador / Verifier**: Es el rol que recibe una entidad al recibir una *credencial verificable* o una *presentación verificable* para su procesamiento.
 
 ## Notas importantes
 
