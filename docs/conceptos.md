@@ -16,7 +16,7 @@ title: Estándares sobre identidad digital y credenciales verificables
 - **Credencial Verificable / Verifiable Credential / VC**: Un conjunto de uno o más *claims* realizado por un *emisor*.
 - **Documento DID / Decentralized identifier document / DID document**: Un documento que puede accederse desde un registro de datos verificables y contiene información sobre un *DID* específico.
 - **Emisor / Issuer**: Un rol que una entidad desempeña al realizar un *claim* creando una *credencial verificable*.
-- **Firma digita / Digital signature**: Un esquema matemático para demostrar la autenticidad de un mensaje.
+- **Firma digital / Digital signature**: Un esquema matemático para demostrar la autenticidad de un mensaje.
 - **Identificador Descenetralizado / Decentralized identifier / DID**: Un identificador portátil similar a una url, asociado a un asunto, persona o cosa.
 - **Registro de datos verificables / Verifiable data registry**: El rol que se le asigna a un sistema al mediar en la creación y verificación de identificadores, claves y datos relevantes necesarios para utilizar *credenciales verificables*.
 - **Titular / Holder**: Es el rol que se le asigna a una entidad al poseer una *credencial verificable*.
@@ -31,12 +31,12 @@ title: Estándares sobre identidad digital y credenciales verificables
 
 ## Notas importantes
 
-- A *verifiable presentation* expresses data from one or more *verifiable credentials*, and is packaged in such a way that the authorship of the data is verifiable.
-- A *holder* is usually, but not always, a subject of the *verifiable credentials* they are holding. *Holders* store their credentials in *credential repositories*.
-- A *verifiable credential* itself can be easily ported from one *repository* to another without the need to reissue the credential.
-- It is assumed the *verifiable credentials* remain with the *subject*, and if they are not, they were stolen by an attacker.
-- Certain types of *verifiable presentations* might contain data that is synthesized from, but do not contain, the original verifiable credentials.
-- If a single *verifiable credential* supports *selective disclosure*, then *holders* can present proofs of claims without revealing the entire *verifiable credential*.
-- *Issuers* can issue *verifiable credentials* that support *selective disclosure*.
-- The process of *verification* includes checking that: the credential (or presentation) conforms to the specification; the proof method is satisfied; and, if present, the status check succeeds.
-- This specification is constrained to verifying *verifiable credentials* and *verifiable presentations* regardless of their usage. Validating *verifiable credential*s or *verifiable presentations* is outside the scope of this specification.
+- Una *presentación verificable* expresa datos de una o más *credenciales verificables*, y está empaquetada de tal manera que se puede verificar la autoría de los mismos.
+- Un *Portador* es usualmente, pero no siempre, el sujeto de la *credencial verificable* que está portando. Los *Portadores* almacenan sus credenciales en el *repositorio de credenciales*.
+- Una *credencial verificable*  en sí misma se puede migrar de un *repositorio* a otro sin la necesidad de ser creada nuevamente.
+- Se asume que la *credencial verificable* es portada por el *sujeto*, de lo contrario esta misma ha sido robada.
+- Ciertos tipos de *presentaciones verificables* pueden contener datos sintetizados de una credencial verificable original, sin contener necesariamente a la misma.
+- Sí una *credencial verificable* soporta *divulgación selectiva*, entonces el *portador* puede presentar una prueba de veracidad sin la necesidad de revelar el total de la *credencial verificable*.
+- Los *Emisores* pueden emitir *credenciales verificables* que soporten *divulgación selectiva*.
+- El proceso de *verificación* incluye verificar que: la credencial (o presentación) se ajuste a la especificación; el método de prueba es correcto; y, sí está presente, la comprobación de estado se realizó correctamente.
+- Esta especificación se limita a verificar *credenciales y presentaciones verificables* independientemente de su uso. La validación de estas mismas está fuera del alcance de esta especificación.
