@@ -51,7 +51,7 @@ SSI significa que el individuo o la organización (**holders**) gestiona los ele
 
 
 ## ¿Qué es una credencial verificable?
-El término "credencial" puede implicar cualquier conjunto (a prueba de manipulaciones) de información que alguna autoridad afirma que es verdadera sobre un individuo, y que le permite convencer a otros (que confían en esa autoridad) de estas verdades. Por ejemplo: un diploma expedido por una universidad demuestra que tienes un título educativo. Un pasaporte expedido por el gobierno de un país demuestra que eres un ciudadano.
+El término "credencial" puede implicar cualquier conjunto (a prueba de manipulaciones) de información que alguna autoridad afirma que es verdadera sobre un individuo, y que le permite probar a otros (que confían en esa autoridad) de estas verdades. Por ejemplo: un diploma expedido por una universidad demuestra que tienes un título educativo. Un pasaporte expedido por el gobierno de un país demuestra que eres un ciudadano.
 
 Toda credencial contiene un conjunto de afirmaciones o *claims* sobre el sujeto de la credencial, es decir, sobre el titular. Estas afirmaciones son realizadas por un emisor.
 
