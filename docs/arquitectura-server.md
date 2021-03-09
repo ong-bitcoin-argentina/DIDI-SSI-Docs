@@ -10,14 +10,14 @@ Se encuentra desarrollando en NodeJS y ExpressJs y almacena sus datos en MongoDB
 Los diferentes colores en las líneas no tienen un signifaco específico. Es para seguir con mayor facilidad las dependencias. **A -> B** representa que el módulo **A** utiliza a **B**
 
 ### Rutas
-#### /admin
+#### /Admin
 Se utilizan para obtener información confidencial de los usuarios. Están protegidas por un middleware que valida que el JWT pertenezca a un Admin.
 
-#### app y user auth
+#### App y User auth
 > /appAuth y /userApp
 Estas rutas se utilzan para crear applicaciones autorizadas y usuarios pertencientes a estas apps.
 
-#### /issuer
+#### /Issuer
 Desde estas rutas se autoriza y revoca issuers para emitr credenciales.
 También, se le permite a los issurers registrados con anterioridad emitir y revocar credenciales.
 Otra funcionalidad de interés es la de crear shareRequest.
@@ -26,23 +26,26 @@ Otra funcionalidad de interés es la de crear shareRequest.
 > /sendMailValidator y /reSendMailValidator
 Estas rutas se utilizan para enviar y reenviar el mail con el código de validación y su posterior verificación. Estas rutas se encuentrn protegidas por rate-limit.
 
-#### /presentation
+#### /Presentation
 Estas rutas almacenan pesentaciones y le asigan un ID. Mediante ese ID se permite recuperar las presentaciones.
 
-#### /renaper
-Estas rutas se encargan de enviar los datos a renaper para ser validados. Además, se crea un registro en donde se almacena el estado de la verificación en la collection authRequest.
+#### /Renaper
+Estas rutas se encargan de enviar los datos del usuario, incluyendo imagenes como una selfie y el dni, al Re.Na.Per (Registro Nacional de las Personas) para ser validados. 
+:::note
+Además, se crea un registro en donde se almacena el estado de la verificación en la collection authRequest.
+:::
 
-#### /semillas
+#### /Semillas
 *TBA*
 
-#### /shareRequest
+#### /ShareRequest
 Estas rutas permiten almacenar y recuperar shareRequest.
 
 #### Sms
 > /sendSmsValidator y /verifySmsCode
 Estas rutas se utilizan para enviar por sms con el código de validación y su posterior verificación. Estas rutas se encuentran protegidas por rate-limit.
 
-#### /user
+#### /User
 Estas rutas son las encargads de crear usuarios, modificarlos y eliminarlos. 
 También se encuentra la funcionalidad de verificar credenciales
 
@@ -53,7 +56,7 @@ Renovar el token de firebase
 Este serivcio agrega en la base de datos el registro necesario para autorizar una app. También permite obtener una app autorizada a partir de su DID.
 
 #### AuthRequest
-Un AuthRequest es una validación de identidad contra un proveedor de identidad. 
+Son servicios que permiten actualizar, verificar y almacenar en una colección, el estado de validación de identidad de un usuario contra un proveedor de identidad (Re.Na.Per). 
 
 #### Cert
 Genera credenciales para mail, número de teléfono, etc. 
