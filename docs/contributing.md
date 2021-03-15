@@ -37,8 +37,8 @@ Para mayor información consultar [guía sobre referencias de issues en Jira](ht
 * En caso de problemas al hacer el commit, realizar una instalacion global de *cz-jira-smart-commit* y *commitizen* con el siguiente comando `npm i cz-jira-smart-commit commitizen -g`
 
 :::info Importante
-Antes de hacer un commit, verificar que la dirección de email global configurada en Git coincida con la de Jira.
-En caso de ser diferente, [configurarla](https://docs.github.com/es/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address) 
+Antes de hacer un commit, verificar que la dirección de email configurada en Git coincida con la de Jira.
+En caso de ser diferente, configurarla [en un unico repositorio](https://docs.github.com/es/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address#setting-your-email-address-for-a-single-repository) o [de manera global](https://docs.github.com/es/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address#setting-your-commit-email-address-in-git)
 :::
 
 ### Pull Request
