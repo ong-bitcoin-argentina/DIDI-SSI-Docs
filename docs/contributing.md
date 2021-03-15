@@ -34,6 +34,7 @@ Para mayor información consultar [guía sobre referencias de issues en Jira](ht
     - Workflow command
     - Tiempo utilizado
     - Comentario
+* En caso de problemas al hacer el commit, realizar una instalacion global de *cz-jira-smart-commit* y *commitizen* con el siguiente comando `npm i cz-jira-smart-commit commitizen -g`
 
 ### Pull Request
 * Una vez realizado el Pull Request, no realizar force-push para mantener la línea de correcciones.
