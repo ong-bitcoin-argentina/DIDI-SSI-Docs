@@ -33,7 +33,7 @@ Estas rutas almacenan pesentaciones y le asigan un ID. Mediante ese ID se permit
 
 #### /renaper
 Estas rutas se encargan de enviar los datos de un usuario, incluyendo una imagen de selfie y el dni, al Re.Na.Per (Registro Nacional de las Personas)  para ser validados.
-:::note
+:::note Nota
 Además, se crea un registro en donde se almacena el estado de la verificación en la collection authRequest.
 :::
 
