@@ -39,7 +39,9 @@ Coordina las delegaciones. Este servicio genera la tx a la blockchain correspond
 Este servicio tiene un bug, que no reconoce las delegaciones realizdas por fuera de la app. Es decir, si se realiza una delegcion en blockchain, no queda registrada en la app.
 
 #### /register
-Crea, edita y elimina un nuevo registro donde se almacena Nombre, did, y clave privada. 
+Estas rutas permiten obtener, crear, editar y eliminar registros de delegacion de un nuevo emisor, sobre la blockchain elegida.
+Dichos registros contienen Nombre, did y clave privada del nuevo emisor.
+Provee también una ruta por la cual se obtiene la lista de blockchains disponibles.
 
 #### /default
 Se utiliza para crear los valores por defecto del template de credencial y la blockchain de verificación. 
