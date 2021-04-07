@@ -10,6 +10,23 @@ Los Issues y reportes son muy valiosos para este proyecto.
 * Los reportes de bugs ayudan al proyecto a ser más estable y evita que esos mismos errores sucedan en el futuro.
 * Una pregunta, además de resolver las dudas, muestra dónde los colaboradores pueden mejorar la experiencia del usuario.
 
+## Debug apps aidi y ronda
+
+### Acceso al menú del desarrollador en la aplicación
+Podemos acceder al menu de desarrollador de varias maneras, método abreviado `⌘D` cuando su aplicación se está ejecutando en el simulador de iOS o `⌘M` cuando se ejecuta en un emulador de Android en Mac OS y Ctrl+M en Windows y Linux.
+
+![Menú Desarrollador](./images/dev-tools.png)
+
+Tambien se puede acceder desde la consola sobre la que estamos corriendo nuestra app pulsando la `d`
+
+![Menú Desarrollador Desde Consola](./images/dev-tools-desde-consola.png)
+
+### React Native Debugger
+Es una standalone app basada en el debugger oficial de React Native, incluye React Inspector / Redux DevTools. En ella podremos tener todas las funcionalidades en una sola herramienta facilitando el trabajo a la hora de identificar errores, ver propiedades de algun elemento, etc. 
+Con la aplicación abierta y teniendo activado el modo debug desde el menú de desarrollador antes mencionado podremos acceder a todos los elementos de nuestra app, por ejemplo: si activamos `Toggle Inspector` y hacemos click en algun componente de nuestra aplicación se nos posicionará directamente en el componente y podremos ver todas sus propiedades.
+
+![React Native Debugger](./images/Debugger.png)
+
 ## Solicitar funcionalidades
 
 * Las ideas son una valiosa fuente de contribuciones que podés hacer
