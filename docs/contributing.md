@@ -27,6 +27,8 @@ Con la aplicación abierta y teniendo activado el modo debug desde el menú de d
 
 ![React Native Debugger](./images/Debugger.png)
 
+Para mayor información de su instalación y configuración consultar [React Native Debugger](https://github.com/jhen0409/react-native-debugger).
+
 ## Solicitar funcionalidades
 
 * Las ideas son una valiosa fuente de contribuciones que podés hacer
