@@ -13,7 +13,7 @@ Los Issues y reportes son muy valiosos para este proyecto.
 ## Debug apps aidi y ronda
 
 ### Acceso al menú del desarrollador en la aplicación
-Podemos acceder al menu de desarrollador de varias maneras, método abreviado `⌘D` cuando su aplicación se está ejecutando en el simulador de iOS o `⌘M` cuando se ejecuta en un emulador de Android en Mac OS y Ctrl+M en Windows y Linux.
+Podemos acceder al menu de desarrollador de varias maneras, método abreviado `Ctrl+M` en Windows y Linux.
 
 ![Menú Desarrollador](./images/dev-tools.png)
 
