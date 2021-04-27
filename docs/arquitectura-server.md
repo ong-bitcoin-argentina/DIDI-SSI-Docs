@@ -26,13 +26,16 @@ Otra funcionalidad de interés es la de crear shareRequest.
 #### Mail
 > /sendMailValidator y /reSendMailValidator
 
-Estas rutas se utilizan para enviar y reenviar el mail con el código de validación y su posterior verificación. Estas rutas se encuentrn protegidas por rate-limit.
+Estas rutas se utilizan para enviar y reenviar el mail con el código de validación y su posterior verificación. Se encuentran protegidas por rate-limit.
 
 #### /presentation
 Estas rutas almacenan pesentaciones y le asigan un ID. Mediante ese ID se permite recuperar las presentaciones.
 
 #### /renaper
 Estas rutas se encargan de enviar los datos de un usuario, incluyendo una imagen de selfie y el dni, al Re.Na.Per (Registro Nacional de las Personas)  para ser validados.
+>/validateDni - Permite validar la identidad de un usuario contra renaper
+
+>/validateDniState - Retorna el estado de un pedido realizado en /validateDni
 :::note Nota
 Además, se crea un registro en donde se almacena el estado de la verificación en la collection authRequest.
 :::
