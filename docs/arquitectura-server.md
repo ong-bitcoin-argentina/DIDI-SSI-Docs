@@ -24,9 +24,12 @@ También, se le permite a los issurers registrados con anterioridad emitir y rev
 Otra funcionalidad de interés es la de crear shareRequest.
 
 #### Mail
-> /sendMailValidator y /reSendMailValidator
-
 Estas rutas se utilizan para enviar y reenviar el mail con el código de validación y su posterior verificación. Se encuentran protegidas por rate-limit.
+> /sendMailValidator - Permite generar una validación a través del envío de un correo electrónico.
+
+>/reSendMailValidator - Reenviar validación de email
+
+>/verifyMailCode - Validación del código de 6 digitos enviado por Mail
 
 #### /presentation
 Estas rutas almacenan pesentaciones y le asigan un ID. Mediante ese ID se permite recuperar las presentaciones.
