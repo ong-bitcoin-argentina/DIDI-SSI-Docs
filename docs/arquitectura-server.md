@@ -92,8 +92,33 @@ Estas rutas se utilizan para enviar por sms con el código de validación y su p
 #### /user
 Estas rutas son las encargads de crear usuarios, modificarlos y eliminarlos. 
 También se encuentra la funcionalidad de verificar credenciales
+> /user/registerUser - Generar usuario con su backup ('privateKeySeed') para recuperar la cuenta de didi
 
-Renovar el token de firebase
+> /user/recoverAccount - Retornar la clave privada que sirve para recuperar la cuenta de didi
+
+> /user/userLogin - Validar que la contraseña se corresponda con la del usuario que tiene el did ingresado
+
+> /user/recoverPassword - Permite cambiar la contraseña a partir de la cuenta de mail asociada al usuario
+
+> /user/changePassword - Renueva la contraseña, dado el mail y contraseña anterior
+
+> /user/changePhoneNumber - Permite cambiar el número de teléfono asociado al usuario
+
+> /user/changeEmail - Permite cambiar el mail asociado al usuario
+
+> /user/verifyCredentialRequest - Permite pedir al usuario dueño del did, un certificado para validar que es efectivamente el dueño del mismo
+
+> /user/verifyCredential - Obtener la respuesta al pedido de "/verifyCredentialRequest", marcando al certificado como validado
+
+> /user/renewFirebaseToken - Renovar el token de firebase
+
+> /user/:did - Obtener información sobre el usuario
+
+> /user/:did/edit - Editar nombre y apellido
+
+> /user/:did:/image - Agrega una imagen de perfil al usuario
+
+> /user/id/image - Obtener la imagen de usuario según un id
 
 ### Services
 #### AppAuth
