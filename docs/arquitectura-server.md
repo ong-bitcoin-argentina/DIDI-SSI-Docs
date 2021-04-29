@@ -12,28 +12,34 @@ Los diferentes colores en las líneas no tienen un signifaco específico. Es par
 ### Rutas
 #### /admin
 Se utilizan para obtener información confidencial de los usuarios. Están protegidas por un middleware que valida que el JWT pertenezca a un Admin.
-> /admin/user/did/:did - Obtiene información confidencial sobre el usuario según su did.
+> /admin/user/did/:did - Obtener información confidencial sobre el usuario según su did
 
-> /admin/user/phone - Obtiene informacion confidencial sobre el usuario según su numero de teléfono.
+> /admin/user/phone - Obtener información confidencial sobre el usuario según su número de teléfono
 
 #### app y user auth
-> /appAuth y /userApp
-
 Estas rutas se utilzan para crear applicaciones autorizadas y usuarios pertencientes a estas apps.
+> /appAuth/:did - Obtener una aplicación autorizada según su did
+
+> /appAuth - Crea una aplicación para volverla autorizada por DIDI
+
+> /userApp/did - Obtener un usuario según su did, cuya relación [user - app autorizada] fue establecida 
+
+> /userApp - Crear y validar la relación [user - app autorizada]
+
 
 #### /issuer
 Desde estas rutas se autoriza y revoca issuers para emitr credenciales.
 También, se le permite a los issurers registrados con anterioridad emitir y revocar credenciales.
 Otra funcionalidad de interés es la de crear shareRequest.
-> /issuer/issueCertificate - Valida el certificado generado por el issuer y lo envia a mouro para ser guardado
+> /issuer/issueCertificate - Validar el certificado generado por el issuer y lo envia a mouro para ser guardado
 
 > /issuer/issueShareRequest - Permite al usuario dueño del did, pedir uno o más certificados para obtener la información de los mismos
 
-> /issuer/revokeCertificate - Permite revocar un certificado previamente almacenado en mouro
+> /issuer/revokeCertificate - Revocar un certificado previamente almacenado en mouro
 
-> /issuer/verifyCertificate - Permite validar un certificado a partir del jwt
+> /issuer/verifyCertificate - Validar un certificado a partir del jwt
 
-> /issuer/verify - Verifica la existencia del emisor según el did
+> /issuer/verify - Verificar la existencia del emisor según el did
 
 > /issuer - Revocar autorización de un emisor para emitir certificados
 
@@ -45,25 +51,25 @@ Otra funcionalidad de interés es la de crear shareRequest.
 
 #### Mail
 Estas rutas se utilizan para enviar y reenviar el mail con el código de validación y su posterior verificación. Se encuentran protegidas por rate-limit.
-> /sendMailValidator - Permite generar una validación a través del envío de un correo electrónico.
+> /sendMailValidator - Permite generar una validación a través del envío de un correo electrónico
 
 > /reSendMailValidator - Reenviar validación de email
 
-> /verifyMailCode - Validación del código de 6 digitos enviado por Mail
+> /verifyMailCode - Validar código de 6 digitos enviado por email
 
 #### /presentation
 Estas rutas almacenan pesentaciones y le asigan un ID. Mediante ese ID se permite recuperar las presentaciones.
-> /presentation - Guarda una presentación, que luego se podra acceder a ella a travez de un linck en el Validator Viewer.
+> /presentation - Guardar una presentación, a la que luego se podrá acceder a travez de un link en el Validator Viewer
 
-> /presentation/:id - Obtiene una presentación dado un id
+> /presentation/:id - Obtener una presentación dado un id
 
 #### /renaper
 Estas rutas se encargan de enviar los datos de un usuario, incluyendo una imagen de selfie y el dni, al Re.Na.Per (Registro Nacional de las Personas)  para ser validados.
-> /renaper/validateDni - Permite validar la identidad de un usuario contra renaper
+> /renaper/validateDni - Validar la identidad de un usuario contra renaper
 
-> /renaper/validateDniState - Retorna el estado de un pedido realizado en /validateDni
+> /renaper/validateDniState - Obtener el estado de un pedido realizado en /validateDni
 :::note Nota
-Además, se crea un registro en donde se almacena el estado de la verificación en la collection authRequest.
+Además, se crea un registro en donde se almacena el estado de la verificación en la collection authRequest
 :::
 
 #### /semillas
@@ -71,17 +77,17 @@ Además, se crea un registro en donde se almacena el estado de la verificación 
 
 #### /shareRequest
 Estas rutas permiten almacenar y recuperar shareRequest.
-> /shareRequest - Guarda un ShareRequest
+> /shareRequest - Guardar un ShareRequest
 
-> /shareRequest:id - Obtiene un ShareRequest según id
+> /shareRequest:id - Obtener un ShareRequest según id
 
 #### Sms
 Estas rutas se utilizan para enviar por sms con el código de validación y su posterior verificación. Estas rutas se encuentran protegidas por rate-limit.
-> /sendSmsValidator - Validación del email
+> /sendSmsValidator - Validar email
 
 > /reSendMailValidator - Reenviar validación del email
 
-> /verifyMailCode - Validación del código de 6 digitos enviado por Mail
+> /verifyMailCode - Validar código de 6 digitos enviado por Mail
 
 #### /user
 Estas rutas son las encargads de crear usuarios, modificarlos y eliminarlos. 
