@@ -30,6 +30,21 @@ Se leen, crean, modifican y eliminan templates de credenciales.
 
 #### /cert
 Estas rutas permiten crear, modificar, elimnar u obtener credenciales.
+> /cert/all - Obtener la lista con info de los certificados generados por el issuer
+
+> /cert/find - Listar certificados emitidos
+
+> /cert/:id - Retornar un certificado a partir de su id
+
+> /cert - Generar un nuevo certificado a partir de la data y el modelo de certificado
+
+> /cert/:id (put) - Modificar un certificado con los datos recibidos
+
+> /cert/:id (delete) - Marcar un certificado como borrado y lo revoca en caso de haber sido emitido
+
+> /cert/:id/emmit - Dado un id enviar certificado a didi-server para ser emitido
+
+> /cert/updateAllDeleted - Recuperar todas las credenciales marcadas como eliminadas
 
 #### /delegate
 *TBA. Esperando implementación multiblockchain.*
