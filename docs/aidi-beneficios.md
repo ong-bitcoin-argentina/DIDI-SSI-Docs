@@ -1,6 +1,6 @@
 ---
 id: aidi-beneficios
-title: ai·di | Beneficios
+title: Beneficios
 ---
 
 ## Sección del Beneficios de Emisores

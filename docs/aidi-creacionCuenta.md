@@ -1,6 +1,6 @@
 ---
 id: aidi-creacionCuenta
-title: ai·di | Creación y recuperación de cuenta ai·di
+title: Creación y recuperación de cuenta ai·di
 ---
 
 ## Creación de cuenta en ai·di

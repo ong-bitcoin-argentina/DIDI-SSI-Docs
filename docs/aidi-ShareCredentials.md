@@ -1,9 +1,7 @@
 ---
 id: aidi-ShareCredentials
-title: Proyecto DIDI - ai·di
+title: Compartir Credeciales
 ---
-
-# Anexo - Compartir Credenciales
 
 ## Flujo del proceso 
 
@@ -25,10 +23,10 @@ Disparador: Usuario elige una credencial para compartir a otro usuario de app mo
 12- Resultado: El Receptor visualiza  la credencial compartida desde “Credenciales Compartidas”:
  
  
-##ShareProposal:
+## ShareProposal:
 Un ShareProposal es un JWT que representa la propuesta de compartir una credencial a un DID destinatario.
  
-###Ejemplo de JWT decodificado de ShareProposal:
+### Ejemplo de JWT decodificado de ShareProposal:
  
 {
   "type": "shareProposal",
@@ -48,10 +46,10 @@ Un ShareProposal es un JWT que representa la propuesta de compartir una credenci
   "iss": "did:ethr:0xeb45ecc37a23bbf0303c991e26d1e9f24bf014ba"
 }
  
-##ShareRequest:
+## ShareRequest:
 Un ShareRequest es un JWT que contiene la petición de acceder a una credencial compartida. 
  
-###Ejemplo de JWT decodificado de ShareRequest:
+### Ejemplo de JWT decodificado de ShareRequest:
  
 {
   "type": "shareReq",
@@ -71,7 +69,7 @@ Un ShareRequest es un JWT que contiene la petición de acceder a una credencial 
   "iss": "did:ethr:0xb4e337c20bec3226c3e782d359ac66b249d76bc8"
 }
  
-##ShareRequest + Credencial/es compartida/s
+## ShareRequest + Credencial/es compartida/s
  
 Una vez realizado el handshake entre DID destinatario y DID dueño de la credencial a compartir, se genera JWT con el contenido de la credencial a ser recibido por el destinatario.
  

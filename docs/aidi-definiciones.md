@@ -1,9 +1,8 @@
 ---
 id: aidi-definiciones
-title: Proyecto DIDI - ai·di
+title: ¿Qué es ai·di?
 ---
 
-## ¿Qué es ai·di?
 ai·di es una solución tecnológica de identidad digital descentralizada desarrollada en el marco del Proyecto DIDI “Inclusión Cívica, Social y Económica mediante modelos de Blockchain”, ejecutado por la A.C. DECODES en conjunto con BID Lab.
 
 El Proyecto DIDI propone construir una identidad digital que certifique y valide datos sociales, cívicos y económicos, a través de la emisión de credenciales verificables, a partir de información certificada por terceros (instituciones o individuos). 

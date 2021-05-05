@@ -1,6 +1,6 @@
 ---
 id: aidi-validacionIdentidad
-title: ai·di | Validación de Identidad en ai·di
+title: Validación de Identidad en ai·di
 ---
 
 ## Validación de Identidad o validación alternativa por parte del emisor.

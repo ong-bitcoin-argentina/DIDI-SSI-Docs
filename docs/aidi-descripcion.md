@@ -1,6 +1,6 @@
 ---
 id: aidi-descripcion
-title: Proyecto DIDI - ai·di
+title: ai·di App
 ---
 
 ## Descripción
