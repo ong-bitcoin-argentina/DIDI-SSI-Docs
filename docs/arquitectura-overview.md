@@ -12,50 +12,43 @@ Se describen a continuación los componentes más significativos del Proyecto DI
 **Brief**
 El issuer habilita a distintas entidades autorizadas por el DIDI-server a generar y emitir certificados que podrán ser accedidos por los dueños de los mismos desde la app ai·di.
 
-**Repo**
-- https://github.com/ong-bitcoin-argentina/DIDI-SSI-Issuer-Module
+[**Repositorio**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Issuer-Module)
 
 ### DIDI Issuer Frontend
 **Brief**
 *TBA*
 
-**Repo**
-- https://github.com/ong-bitcoin-argentina/DIDI-SSI-Issuer-Module
+[**Repositorio**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Issuer-Module)
 
 ### DIDI Credential Viewer/Validator
 **Brief**
 La app Credential Viewer permite la visualización de credenciales que fueron compartidas anteriormente mediante la app ai·di.
 
-**Repo**
-- https://github.com/ong-bitcoin-argentina/DIDI-SSI-JWT_Validator_Viewer
+[**Repositorio**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-JWT_Validator_Viewer)
 
 ### DIDI App SDK
 **Brief**
 *TBA*
 
-**Repo**
-- https://github.com/ong-bitcoin-argentina/DIDI-SSI-app_sdk
+[**Repositorio**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-app_sdk)
 
 ### DIDI Mobile App
 **Brief**
 La app mobile es el medio principal de interacción con los usuarios finales. Desde allí los usuarios pueden recibir, ver y compartir sus credenciales.
 
-**Repo**
-- https://github.com/ong-bitcoin-argentina/DIDI-SSI-Mobile
+[**Repositorio**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Mobile)
 
 ### DIDI Mouro (Trust Graph Service)
 **Brief**
 uPort Trust Graph Server (aka EdgeServer)
 
-**Repo**
-- https://github.com/ong-bitcoin-argentina/DIDI-SSI-mouro_didi
+[**Repositorio**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-mouro_didi)
 
 ### DIDI Server
 **Brief**
 *TBA*
 
-**Repo**
-- https://github.com/ong-bitcoin-argentina/DIDI-SSI-Server
+[**Repositorio**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Server)
 
 
 ### Entorno de ejecución

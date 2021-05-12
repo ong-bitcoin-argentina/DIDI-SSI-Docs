@@ -1,8 +1,9 @@
 module.exports = {
   sidebar: {
-    "Visión general": ["overview"],
-    "Conceptos importantes": ['ssi-concepts'],
-    Producto: ['aidi-definiciones', 'aidi-descripcion', 'aidi-creacionCuenta', 'aidi-validacionIdentidad', 'aidi-beneficios', 'aidi-ShareCredentials', 'producto-emisores',],
+    "Visión general": ['overview/overview', 'overview/plataforma-didi',],
+    "Identidad Digital Auto-Soberana": ['ssi/ssi-concepts'],
+    "ai·di": ['aidi/aidi-descripcion', 'aidi/aidi-creacionCuenta', 'aidi/aidi-validacionIdentidad', 'aidi/aidi-solicitarCredenciales', 'aidi/aidi-beneficios', 'aidi/aidi-shareCredentials',],
+    "Emisores": ['emisores/producto-emisores',],
     "Contribuciones": ['contribuciones', 'code-fo-conduct'],
     Developers: [
       {
