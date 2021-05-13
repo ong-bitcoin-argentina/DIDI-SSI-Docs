@@ -6,7 +6,7 @@ title: Overview de ai·di
 ## Arquitectura
 Se describen a continuación los componentes más significativos del Proyecto DIDI. Para mayor detalle de cada uno de estos ver la sección **Descripción técnica**.
 
-![Componentes arquitectura](./images/didi-ssi-arquitectura-componentes.png)
+![Componentes arquitectura](../../images/didi-ssi-arquitectura-componentes.png)
 
 ### DIDI Issuer Backend
 **Brief**
@@ -55,7 +55,7 @@ uPort Trust Graph Server (aka EdgeServer)
 
 El entorno de ejecución de los componentes se encuentra descirpto mediante el siguiene diagrama:
 
-![Componentes deploytment](./images/didi-ssi-arquitectura-deployment.png)
+![Componentes deploytment](../../images/didi-ssi-arquitectura-deployment.png)
 
 El **visor de credenciales** y el **Issuer front** son 2 aplicaciones para navegador, desarrolladas en React. Por otro lado, la **wallet ai·di** y **ronda** se encuentran desarrolladas en React Native, con soporte sólo para Android.
 

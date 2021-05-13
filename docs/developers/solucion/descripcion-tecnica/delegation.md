@@ -1,6 +1,6 @@
 ---
 id: delegation
-title: Flujos de delegacion
+title: Flujos de delegación
 ---
 
 ## Delegaciones en Blockchain
@@ -46,7 +46,7 @@ Estos documentos luego son procesados por un job, que realiza las tx en el mismo
 Realiza la delegación en blockchain, y posteriormente almacena el resultado en la colección `Delegate`. Es similar a las delegaciones en DIDI-Server, con la diferencia de que no encola las delegaciones para ser procesadas posteriormente.
 
 ### Delegaciones y emisión de credenciales.
-![delegacions](./images/delegaciones.png)
+![delegacions](../../../images/delegaciones.png)
 
 Inicialmente, DIDI-Server es capaz de emitir credenciales. Actualmente es el encargado de emitir las credenciales por la verificación de número de teléfono, por la verificación de email y por la verificación de identidad.
 
@@ -57,4 +57,4 @@ Para ejemplificar un caso de uso interesante, suponemos la estructura organizaci
 
 Estas cadenas de delegaciones no se encuentran soportadas. En caso de necesitar este tipo de estructuras, las delegaciones se deben hacer desde el DIDI-Server. Queda la estructura de delegaciones en la forma de nodo central DIDI-Server.
 
-![delegacions](./images/delegaciones-actual.png)
+![delegacions](../../../images/delegaciones-actual.png)

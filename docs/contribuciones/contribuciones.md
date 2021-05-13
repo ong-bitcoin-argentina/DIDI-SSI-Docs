@@ -7,7 +7,7 @@ title: Guía de contribución
 
 Actualmente contamos con 3 canales de distribución **Pruebas internas**, **Pruebas cerradas**, y **pruebas abiertas**. Cada uno de estos canales se corresponde con un ambiente distinto.
 
-![Ambientes y canales](./images/servers-y-canales.png)
+![Ambientes y canales](../images/servers-y-canales.png)
 
 ### Pruebas internas
 Este canal está dedicado a devs y testers que deseen probar nuevos features durante su desarrollo. En caso de darte de alta en este canal, no olvides contactar al equipo de desarrollo para ayudarte con la configuración.
@@ -49,17 +49,17 @@ Los Issues y reportes son muy valiosos para este proyecto.
 ### Acceso al menú del desarrollador en la aplicación
 Podemos acceder al menu de desarrollador de varias maneras, método abreviado `Ctrl+M` en Windows y Linux.
 
-![Menú Desarrollador](./images/dev-tools.png)
+![Menú Desarrollador](../images/dev-tools.png)
 
 Tambien se puede acceder desde la consola sobre la que estamos corriendo nuestra app pulsando la `d`
 
-![Menú Desarrollador Desde Consola](./images/dev-tools-desde-consola.png)
+![Menú Desarrollador Desde Consola](../images/dev-tools-desde-consola.png)
 
 ### React Native Debugger
 Es una standalone app basada en el debugger oficial de React Native, incluye React Inspector / Redux DevTools. En ella podremos tener todas las funcionalidades en una sola herramienta facilitando el trabajo a la hora de identificar errores, ver propiedades de algun elemento, etc. 
 Con la aplicación abierta y teniendo activado el modo debug desde el menú de desarrollador antes mencionado podremos acceder a todos los elementos de nuestra app, por ejemplo: si activamos `Toggle Inspector` y hacemos click en algun componente de nuestra aplicación se nos posicionará directamente en el componente y podremos ver todas sus propiedades.
 
-![React Native Debugger](./images/Debugger.png)
+![React Native Debugger](../images/Debugger.png)
 
 Para mayor información de su instalación y configuración consultar [React Native Debugger](https://github.com/jhen0409/react-native-debugger).
 

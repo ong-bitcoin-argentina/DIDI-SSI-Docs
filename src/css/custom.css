@@ -61,6 +61,10 @@ h5{
   font-size: 1.25rem !important;
 }
 
+.menu{
+  font-size: 0.95rem !important;
+}
+
 img[alt=playstore] { height: 4rem }
 img[alt=Credenciales] { display: block; margin: auto; height: 20rem }
 img[alt=Descentralizado] { display: block; margin: auto; }

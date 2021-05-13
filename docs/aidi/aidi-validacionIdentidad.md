@@ -3,7 +3,6 @@ id: aidi-validacionIdentidad
 title: Validación de Identidad en ai·di
 ---
 
-## Validación de Identidad o validación alternativa por parte del emisor
 ### Validación de identidad mediante servicio de validación de datos biométricos
 Desde la pantalla de inicio se accede a la validación de identidad, presionando en “validar DNI”.
 

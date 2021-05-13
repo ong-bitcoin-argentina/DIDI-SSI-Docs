@@ -7,7 +7,7 @@ title: Compartir credeciales
 
 A continuación descripción del flujo del proceso implementado en ai·di app:
 
-Disparador: Usuario elige una credencial para compartir a otro usuario de app mobile ai·di.
+**Disparador**: Usuario elige una credencial para compartir a otro usuario de app mobile ai·di.
 
 1. El emisor elige la credencial a compartir por QR.
 2. El emisor genera QR que contiene un shareProposal y confirma la operación de compartir.
@@ -27,8 +27,9 @@ Disparador: Usuario elige una credencial para compartir a otro usuario de app mo
 Un ShareProposal es un JWT que representa la propuesta de compartir una credencial a un DID destinatario.
  
 ### Ejemplo de JWT decodificado de ShareProposal:
- 
-`{
+
+```json 
+{
   "type": "shareProposal",
   "claims": {
     "verifiable": {
@@ -44,14 +45,16 @@ Un ShareProposal es un JWT que representa la propuesta de compartir una credenci
     "user_info": {}
   },
   "iss": "did:ethr:0xeb45ecc37a23bbf0303c991e26d1e9f24bf014ba"
-}`
+}
+```
  
 ## ShareRequest:
 Un ShareRequest es un JWT que contiene la petición de acceder a una credencial compartida. 
  
 ### Ejemplo de JWT decodificado de ShareRequest:
- 
-`{
+
+```json
+{
   "type": "shareReq",
   "claims": {
     "verifiable": {
@@ -67,7 +70,8 @@ Un ShareRequest es un JWT que contiene la petición de acceder a una credencial 
     "user_info": {}
   },
   "iss": "did:ethr:0xb4e337c20bec3226c3e782d359ac66b249d76bc8"
-}`
+}
+```
  
 ## ShareRequest + Credencial/es compartida/s
  
@@ -75,7 +79,8 @@ Una vez realizado el handshake entre DID destinatario y DID dueño de la credenc
  
 ###Ejemplo de JWT decodificado de ShareRequest + Credencial:
  
-`{
+```json
+{
   "iat": 1606477752,
   "exp": 1606478352,
   "sub": "did:ethr:0xb4e337c20bec3226c3e782d359ac66b249d76bc8",
@@ -87,5 +92,6 @@ Una vez realizado el handshake entre DID destinatario y DID dueño de la credenc
   "aud": "did:ethr:0xb4e337c20bec3226c3e782d359ac66b249d76bc8",
   "type": "shareResp",
   "iss": "did:ethr:0xeb45ecc37a23bbf0303c991e26d1e9f24bf014ba"
-}`
+}
+```
  

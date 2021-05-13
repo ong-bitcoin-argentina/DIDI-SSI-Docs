@@ -6,7 +6,7 @@ title: Server
 DIDI-SSI-Server es el nodo central de ai·di, permite almacenar los datos de recuperación de usuario y actúa como intermediario entre los demás módulos y Mouro, validando certificados y evitando que issuers no autorizados puedan emitir certificados.
 Se encuentra desarrollando en NodeJS y ExpressJs y almacena sus datos en MongoDB.
 
-![Server](./images/didi-ssi-server.png)
+![Server](../../../images/didi-ssi-server.png)
 Los diferentes colores en las líneas no tienen un signifaco específico. Es para seguir con mayor facilidad las dependencias. **A -> B** representa que el módulo **A** utiliza a **B**
 
 ### Rutas
@@ -59,7 +59,7 @@ Estas rutas se utilizan para enviar y reenviar el mail con el código de validac
 
 #### /presentation
 Estas rutas almacenan pesentaciones y le asigan un ID. Mediante ese ID se permite recuperar las presentaciones.
-> /presentation - Guardar una presentación, a la que luego se podrá acceder a travez de un link en el Validator Viewer
+> /presentation - Guardar una presentación, a la que luego se podrá acceder a través de un link en el Validator Viewer
 
 > /presentation/:id - Obtener una presentación dado un id
 

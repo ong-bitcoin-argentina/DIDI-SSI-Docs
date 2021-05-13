@@ -1,5 +1,5 @@
 ---
-id: revokation
+id: revocation
 title: Flujos de revocación de credenciales
 ---
 

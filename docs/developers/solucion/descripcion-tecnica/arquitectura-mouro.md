@@ -9,7 +9,7 @@ Mouro es un gestor de base de datos, el cual se comunica con una base de datos S
 
 Otra dato interesante, es que se crea un archivo de DB SQLite por cada DID.
 
-![Mouro](./images/didi-ssi-mouro.png)
+![Mouro](../../../images/didi-ssi-mouro.png)
 > Los diferentes colores en las líneas no tienen un signifaco específico. Es para seguír con mayor facilidad las dependencias. **A -> B** representa que el módulo **A** utiliza a **B**
 
 ### Llamadas
