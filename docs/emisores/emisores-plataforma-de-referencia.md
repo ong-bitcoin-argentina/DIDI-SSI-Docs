@@ -20,8 +20,6 @@ Vale rescatar, que durante el proceso del diseño de la implementación, existe 
 
 Existen distintos tipos de credenciales (identidad, vivienda, familiar, emprendimiento, crediticia, beneficios). Cada una de estas se alimenta de distintas fuentes de datos y tiene sus propias reglas de emisión y revocación.
 
-![center](../images/credencial-semillas-beneficio.png)
-
 #### Precredenciales
 Llamamos precredencial a una instancia previa a la creación de la misma. En pocas palabras, estas precredenciales contendrán la información necesaria para la creación de la credencial y estarán a la espera de que se informe cuál es el DID (Decentralized Identifier) destinatario al que deberán ser emitidas.
 
@@ -69,7 +67,7 @@ Desde la sección de **Actividades** del menú lateral, se visualizan los logs d
 Una potencialidad identificada en base al modelo del caso de implementación, es la posibilidad de acceder a beneficios con los que cuenta un cliente por estar al día con su crédito (así como los créditos de los integrantes de su grupo solidario).
 Se propone la automatización de este acceso, ofrenciendo desde la app ai·di el listado de beneficios a los que el titular tiene acceso bajo las condiciones previamente mencionadas.
 Del lado del emisor, existe una sección para cargar la información de los prestadores a los que los beneficiarios tendrán acceso.
-DDesde la app ai·di se da el primer paso de la solicitud de beneficio: se comparten credenciales relevantes con el prestador del beneficio. Al compartir mediante este flujo, se le envía un mail al prestador con ciertos datos relevantes como ser, nombre, apellido, DNI, y si está habilitado para recibir el beneficio (previa confirmación por parte del dueño de la cuenta). El recpetor del mail podrá verificar los datos compartidos y la veracidad de estos gracias a las credenciales verificables. De esta forma se vuelve más eficiente el proceso de acceso a las prestaciones, tanto para quienes acceden como para las entidades involucradas, ya que la instancia de validación de la información ya no supone un involucramiento de todas las partes.
+Lo que sucede durante este proceso, es que un beneficiario comparte una serie de credenciales directamente desde su app ai·di a través del envío de un mail al prestador del servicio, que podrá verificar los datos compartidos y la veracidad de estos gracias a las credenciales verificables. De esta forma se vuelve más eficiente el proceso de acceso a las prestaciones, tanto para quienes acceden como para las entidades involucradas, ya que la instancia de validación de la información ya no supone un involucramiento de todas las partes.
 <!-- por favor reformular -->
 
 ![beneficios](../images/emisor-auto-beneficios.png)
