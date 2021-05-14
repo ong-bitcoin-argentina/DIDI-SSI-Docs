@@ -45,13 +45,13 @@ SSI significa que el individuo o la organización (**holders**) gestiona los ele
 
 **Holder o Titular**: es el rol que se le asigna a un entidad al poseer una *credencial verificable*, teniendo el control del ciclo de vida de las credenciales emitidas, como compartirlas o eliminarlas. Por ejemplo, un emprendedor que tiene una credencial en su wallet.
 
-**Verifier o Validador**: es el rol que recibe una entidad al recibir una *credencial verificable* o una *presentación verificable* para su procesamiento. Verifica si la credencial compartida por un titular es válida (es decir, si la credencial proviene de un emisor de confianza, no revocada por el emisor). Por ejemplo, cualquier entidad con la que el holder haya decidido compartir su credencial.
+**Verifier o Validador**: es el rol que recibe una entidad al recibir una *credencial verificable* o una *presentación verificable* para su procesamiento. Verifica si la credencial compartida por un titular es válida (es decir, si la credencial proviene de un emisor de confianza, si no está revocada por el emisor). Por ejemplo, cualquier entidad con la que el holder haya decidido compartir su credencial.
 
 *Nota*: Una entidad puede desempeñar varios papeles. Por ejemplo, una organización puede ser emisor al mismo tiempo que puede ser validador.
 
 
 ## ¿Qué es una credencial verificable?
-El término "credencial" puede implicar cualquier conjunto (a prueba de manipulaciones) de información que alguna autoridad afirma que es verdadera sobre un individuo, y que le permite probar a otros (que confían en esa autoridad) de estas verdades. Por ejemplo: un diploma expedido por una universidad demuestra que tienes un título educativo. Un pasaporte expedido por el gobierno de un país demuestra que eres un ciudadano.
+El término "credencial" puede implicar cualquier conjunto de información que alguna autoridad afirma que es verdadera sobre un individuo, y que le permite probar a otros (que confían en esa autoridad) estas afirmaciones. Por ejemplo: un diploma expedido por una universidad demuestra que tenés un título universitario. Un pasaporte expedido por el gobierno de un país demuestra que sos un ciudadano.
 
 Toda credencial contiene un conjunto de afirmaciones o *claims* sobre el sujeto de la credencial, es decir, sobre el titular. Estas afirmaciones son realizadas por un emisor.
 
@@ -72,8 +72,6 @@ Toda credencial contiene un conjunto de afirmaciones o *claims* sobre el sujeto 
 El DID es un tipo de identificador que permite una identidad digital verificable y descentralizada. Un DID identifica de forma única a una entidad (como una persona u organización). La generación y el control de los DID recae en el propietario de la identidad, es decir, en el sujeto del DID (por ejemplo, a través de las claves privadas de una wallet).
 
 Los DID son persistentes, verificables criptográficamente, y son desreferenciables.
-
-Los DID son bloques de construcción para credenciales verificables, carteras, etc. Para que todo esto funcione, tenemos que ser capaces de "resolver" los DID a sus documentos DID asociados. 
 
 Un Documento DID contiene metada sobre el sujeto DID. Contiene información clave como claves públicas, *service endpoints* y métodos de autentificación. Es un documento que puede accederse desde un registro de datos verificables y contiene información sobre un *DID* específico.
 
