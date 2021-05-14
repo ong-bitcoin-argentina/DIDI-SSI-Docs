@@ -6,7 +6,7 @@ title: Ronda
 DIDI-SSI-Ronda es un monorepo que cuenta con una API desarrollada con Express.js, una app mobile desarrollada en React Native y 2 Smart Contracts desarrollados en Solidity.
 Esta aplicación interactua con DIDI-Server para obtener información de los usuarios de ai·di a fin de loguearse e integrarse entre sí.
 
-![Ronda](./images/didi-ssi-ronda.png)
+![Ronda](../../../images/didi-ssi-ronda.png)
 Los diferentes colores en las líneas no tienen un significado específico. Es para seguir con mayor facilidad las dependencias. **A -> B** representa que el módulo **A** utiliza a **B**
 
 ## API

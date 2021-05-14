@@ -1,9 +1,11 @@
 ---
 id: ssi-concepts
-title: Introducción a la Identidad Autosoberana (SSI | Self Sovereign Identity)
+title: Introducción a la identidad auto-soberana
 ---
 
 ## Visión general
+La identidad auto-soberana (SSI | Self Sovereign Identity) es un movimiento digital que reconoce que los individuos deben sean los únicos dueños de su identidad, teniendo el control sobre cómo se comparten y utilizan sus datos personales.
+
 En 2016, Christopher Allen estableció los 10 principios para la identidad auto-soberana que se han convertido en una referencia en el campo. Estos principios son:
 - **Acceso:** Los usuarios deben tener acceso a sus propios datos.
 - **Consentimiento:** Los usuarios deben aceptar previamente el uso de su identidad por terceros.
@@ -18,9 +20,7 @@ En 2016, Christopher Allen estableció los 10 principios para la identidad auto-
 Estos principio nos dan una idea general de que la identidad auto-soberana se basa en repositorios personales portables en los que podemos almacenar y administrar todas nuestras claves  privadas, nuestros autenticadores y nuestros tokens y credenciales digitales de manera segura y confiable.
 
 
-## ¿Qué es la identidad digital autosoberana (SSI)?
-La identidad auto-soberana (SSI) es un movimiento digital que reconoce que los individuos deben sean los únicos dueños de su identidad, teniendo el control sobre cómo se comparten y utilizan sus datos personales.
-
+## ¿Qué es la identidad digital auto-soberana (SSI)?
 Todo el mundo (incluidas las empresas y las IoT) tiene diferentes relaciones o conjuntos únicos de información de identificación. Esta información puede ser cosas como la fecha de nacimiento, la ciudadanía, los títulos universitarios o las licencias comerciales. Este conjunto de información, entre otras, es lo que confroma nuestra identidad. Lo que en el mundo físico implica tarjetas o certificados, en SSI hablamos de credenciales verificables.
 
 SSI significa que el individuo o la organización (**holders**) gestiona los elementos que componen su identidad y controla el acceso a esas credenciales, de forma digital, teniendo uno o varios identificadores y pudiendo presentar *claims* relacionados con esos identificadores evitando la necesidad de pasar por un tercero como intermediario.
@@ -81,9 +81,9 @@ Un Documento DID contiene metada sobre el sujeto DID. Contiene información clav
 El método DID se utiliza para resolver un documento DID a DID. Para utilizar un DID con una red en particular, es necesario definir un método DID en una especificación de método DID. Un método DID especifica el conjunto de reglas sobre cómo se registra, resuelve, actualiza y revoca un DID en esa red específica.
 
 
-### Para más información
-- DIDs: https://www.w3.org/TR/did-core
-- DID methods: https://w3c-ccg.github.io/did-method-registry
-- Verified Credentials: https://www.w3.org/TR/vc-data-model
-- Implementation guide: https://www.w3.org/TR/vc-imp-guide/
-- Terminología básica: https://www.w3.org/TR/vc-data-model/#terminology
+### Para más información:
+- [DIDs](https://www.w3.org/TR/did-core)
+- [DID methods](https://w3c-ccg.github.io/did-method-registry)
+- [Verified Credentials](https://www.w3.org/TR/vc-data-model)
+- [Implementation guide](https://www.w3.org/TR/vc-imp-guide/)
+- [Terminología básica](https://www.w3.org/TR/vc-data-model/#terminology)

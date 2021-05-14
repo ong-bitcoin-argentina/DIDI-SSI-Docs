@@ -9,7 +9,7 @@ El backend se encuentra desarrollado en NodeJS y ExpressJs utiliza MongoDB para 
 
 Dentro del código, se encuentra el termino "certificado", jwt que hacen referencia a las credenciales verificables o VC.
 
-![Issuer backend](./images/didi-ssi-issuer-back.png)
+![Issuer backend](../../../images/didi-ssi-issuer-back.png)
 > Los diferentes colores en las líneas no tienen un signifaco específico. Es para seguír con mayor facilidad las dependencias. **A -> B** representa que el módulo **A** utiliza a **B**
 
 **Repo**

@@ -1,35 +1,34 @@
 ---
-id: aidi-ShareCredentials
-title: Proyecto DIDI - ai·di
+id: aidi-shareCredentials
+title: Compartir credeciales
 ---
-
-# Anexo - Compartir Credenciales
 
 ## Flujo del proceso 
 
-A continuación descripción del flujo del proceso implementado en aidi app:
+A continuación descripción del flujo del proceso implementado en ai·di app:
 
-Disparador: Usuario elige una credencial para compartir a otro usuario de app mobile aidi.
+**Disparador**: Usuario elige una credencial para compartir a otro usuario de app mobile ai·di.
 
-1- El emisor elige la credencial a compartir por QR.
-2- El emisor genera QR que contiene un shareProposal y confirma la operación de compartir.
-3- El receptor elige la opción “Escanear Credenciales”, escanea el código QR del Emisor y genera un QR con un ShareRequest.
-4- El emisor escanea el código QR  del Receptor.
-5- Genera bloque de información que envía al backend de DIDI con la audiencia asociada (DID receptor) y obtiene un ID de acceso al bloque (Contiene share request + credencial).
-6- El emisor genera 1 único QR con el ID de acceso al bloque de información.
-7- El Receptor escanea el código QR.
-8- El Receptor consulta a DIDI el bloque de información mediante el ID de acceso.
-9- Se valida que el Receptor coincida con la audiencia de la credencial compartida.
-10- Si la validación es correcta: 
-11- El Receptor descarga el bloque de datos y persiste de manera local la Credencial.
-12- Resultado: El Receptor visualiza  la credencial compartida desde “Credenciales Compartidas”:
+1. El emisor elige la credencial a compartir por QR.
+2. El emisor genera QR que contiene un shareProposal y confirma la operación de compartir.
+3. El receptor elige la opción “Escanear Credenciales”, escanea el código QR del Emisor y genera un QR con un ShareRequest.
+4. El emisor escanea el código QR  del Receptor.
+5. Genera bloque de información que envía al backend de DIDI con la audiencia asociada (DID receptor) y obtiene un ID de acceso al bloque (Contiene share request + credencial).
+6. El emisor genera un único QR con el ID de acceso al bloque de información.
+7. El Receptor escanea el código QR.
+8. El Receptor consulta a DIDI el bloque de información mediante el ID de acceso.
+9. Se valida que el Receptor coincida con la audiencia de la credencial compartida.
+10. Si la validación es correcta: 
+11. El Receptor descarga el bloque de datos y persiste la credencial de manera local.
+12. Resultado: El Receptor visualiza la credencial compartida desde “Credenciales Compartidas”:
  
  
-##ShareProposal:
+## ShareProposal:
 Un ShareProposal es un JWT que representa la propuesta de compartir una credencial a un DID destinatario.
  
-###Ejemplo de JWT decodificado de ShareProposal:
- 
+### Ejemplo de JWT decodificado de ShareProposal:
+
+```json 
 {
   "type": "shareProposal",
   "claims": {
@@ -47,12 +46,14 @@ Un ShareProposal es un JWT que representa la propuesta de compartir una credenci
   },
   "iss": "did:ethr:0xeb45ecc37a23bbf0303c991e26d1e9f24bf014ba"
 }
+```
  
-##ShareRequest:
+## ShareRequest:
 Un ShareRequest es un JWT que contiene la petición de acceder a una credencial compartida. 
  
-###Ejemplo de JWT decodificado de ShareRequest:
- 
+### Ejemplo de JWT decodificado de ShareRequest:
+
+```json
 {
   "type": "shareReq",
   "claims": {
@@ -70,13 +71,15 @@ Un ShareRequest es un JWT que contiene la petición de acceder a una credencial 
   },
   "iss": "did:ethr:0xb4e337c20bec3226c3e782d359ac66b249d76bc8"
 }
+```
  
-##ShareRequest + Credencial/es compartida/s
+## ShareRequest + Credencial/es compartida/s
  
 Una vez realizado el handshake entre DID destinatario y DID dueño de la credencial a compartir, se genera JWT con el contenido de la credencial a ser recibido por el destinatario.
  
 ###Ejemplo de JWT decodificado de ShareRequest + Credencial:
  
+```json
 {
   "iat": 1606477752,
   "exp": 1606478352,
@@ -90,4 +93,5 @@ Una vez realizado el handshake entre DID destinatario y DID dueño de la credenc
   "type": "shareResp",
   "iss": "did:ethr:0xeb45ecc37a23bbf0303c991e26d1e9f24bf014ba"
 }
+```
  

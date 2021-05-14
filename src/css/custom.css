@@ -15,6 +15,7 @@
   --ifm-color-primary-lighter: #75ffff;
   --ifm-color-primary-lightest: #75ffff;
   --ifm-code-font-size: 95%;
+  --ifm-footer-padding-vertical: calc(var(--ifm-spacing-vertical) * 1.1);
 }
 
 .docusaurus-highlight-code-line {
@@ -29,9 +30,15 @@ body{
   font-size: 1em;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+}
+
+h3,h4,h5,h6{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 350;
+  color: #3f4146;
 }
 
 h1{
@@ -43,13 +50,21 @@ h2{
 }
 
 h3{
-  font-size: 1.75rem !important;
+  font-size: 1.5rem !important;
 }
 
 h4{
-  font-size: 1.5rem !important;
+  font-size: 1.4rem !important;
 }
 
 h5{
   font-size: 1.25rem !important;
 }
+
+.menu{
+  font-size: 0.95rem !important;
+}
+
+img[alt=playstore] { height: 4rem }
+img[alt=Credenciales] { display: block; margin: auto; height: 20rem }
+img[alt=Descentralizado] { display: block; margin: auto; }

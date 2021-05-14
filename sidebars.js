@@ -1,28 +1,34 @@
 module.exports = {
   sidebar: {
-    "Visión general": ["overview"],
-    "Conceptos importantes": ['ssi-concepts'],
-    Producto: ['aidi-definiciones', 'producto-emisores',],
-    "Contribuciones": ['contribuciones', 'code-fo-conduct'],
+    "Visión general": ['overview/overview', 'overview/plataforma-didi',],
+
+    "Identidad digital auto-soberana": ['ssi/ssi-concepts'],
+
+    "ai·di": ['aidi/aidi-descripcion', 'aidi/aidi-creacionCuenta', 'aidi/aidi-validacionIdentidad', 'aidi/aidi-solicitarCredenciales', 'aidi/aidi-beneficios', 'aidi/aidi-shareCredentials',],
+
+    "Emisores": ['emisores/emisores', 'emisores/emisores-plataforma', 'emisores/emisores-implementacion', 'emisores/emisores-plataforma-de-referencia'],
+
+    "Contribuciones": ['contribuciones/contribuciones', 'contribuciones/code-fo-conduct'],
+
     Developers: [
       {
         "Solución": [
-          "arquitectura-overview",
+          'developers/solucion/arquitectura-overview',
           {
             "Descripción técnica": [
-              "arquitectura-mouro",
-              "arquitectura-issuer",
-              "arquitectura-server",
-              "arquitectura-ronda",
-              "delegation",
+              'developers/solucion/descripcion-tecnica/arquitectura-mouro',
+              "developers/solucion/descripcion-tecnica/arquitectura-issuer",
+              "developers/solucion/descripcion-tecnica/arquitectura-server",
+              "developers/solucion/descripcion-tecnica/arquitectura-ronda",
+              "developers/solucion/descripcion-tecnica/delegation",
             ]
           },
-          "uport",
+          "developers/solucion/uport",
         ]
       },
 
-      { "Troubleshooting": ["troubleshooting", "troubleshooting-rsk", 'revokation'] },
-      { "Multiblockchain": ['multiblockchain', 'multiblockchain-scripts'] }
+      { "Troubleshooting": ['developers/troubleshooting/troubleshooting', 'developers/troubleshooting/troubleshooting-rsk', 'developers/troubleshooting/revocation',] },
+      { "Multiblockchain": ['developers/multiblockchain/multiblockchain', 'developers/multiblockchain/multiblockchain-scripts',] }
     ],
   },
 };

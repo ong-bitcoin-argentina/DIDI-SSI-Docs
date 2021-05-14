@@ -51,11 +51,11 @@ Propósito:
 - Si tiene audiencia, sólo puede hacerlo la misma.
 
 ## Tareas
-1) Probar mediante scripting y definición de métodos en una clase BlockchainManager, el comportamiento que van
+1. Probar mediante scripting y definición de métodos en una clase BlockchainManager, el comportamiento que van
 a poder usar los servicios que interactúen contra una blockchain (por ahora RSK). Tener en cuenta que hay que mejorar:
   - addDelegate consume gas, y hay que mejorar la forma (ver el PR de Capu).
   - los eventos no se están recorriendo bien, y repercute en no poder buscar atributos sobre los DIDs.
-2) Hay que crear un paquete de NPM para el BlockchainManager, así los servicios lo utilizan como dependencia.
-3) Lo integramos como dependencia en DIDI server, y modificamos partes del código para que lo utilicen.
-4) Trabajamos en que sea Multiblockchain.
-5) Luego modificamos los demás servicios si hace falta.
+2. Hay que crear un paquete de NPM para el BlockchainManager, así los servicios lo utilizan como dependencia.
+3. Lo integramos como dependencia en DIDI server, y modificamos partes del código para que lo utilicen.
+4. Trabajamos en que sea Multiblockchain.
+5. Luego modificamos los demás servicios si hace falta.

@@ -1,16 +1,15 @@
 ---
-id: aidi-definiciones
-title: Proyecto DIDI - ai·di
+id: plataforma-didi
+title: Plataforma DIDI
 ---
 
-## ¿Qué es ai·di?
-ai·di es una solución tecnológica de identidad digital descentralizada desarrollada en el marco del Proyecto DIDI “Inclusión Cívica, Social y Económica mediante modelos de Blockchain”, ejecutado por la A.C. DECODES en conjunto con BID Lab.
+La plataforma DIDI es una solución tecnológica de identidad digital descentralizada desarrollada en el marco del Proyecto DIDI “Inclusión Cívica, Social y Económica mediante modelos de Blockchain”, ejecutado por la A.C. DECODES en conjunto con BID Lab.
 
 El Proyecto DIDI propone construir una identidad digital que certifique y valide datos sociales, cívicos y económicos, a través de la emisión de credenciales verificables, a partir de información certificada por terceros (instituciones o individuos). 
 
 DIDI se materializa en la App Mobile ai·di (portadocumentos digital) y un portal web para la emisión y revocación de credenciales.
 
-![Credenciales](./images/credenciales.png)
+![Credenciales](../images/credenciales.png)
 
 ## ¿Por qué blockchain?
 Blockchain o Cadena de bloques, puede ser entendido como un libro mayor contable (Ledger) o una base de datos en la que se registran múltiples transacciones. Es distribuido, es decir que se encuentra repartido en numerosas máquinas donde la información se encuentra replicada de forma idéntica, encriptada y verificada. Su tecnología de contabilidad distribuida (DLT), hace posible crear una identidad digital auto soberana que garantiza los requisitos de:
@@ -18,7 +17,7 @@ Privacidad: la información permanece protegida contra la divulgación no intenc
 Control: el propietario de la identidad decide quién puede ver y acceder a sus datos y para qué propósitos
 Portabilidad: el titular de los datos no se ata a un solo proveedor.
 
-![Descentralizado](./images/descentralizar.png)
+![Descentralizado](../images/descentralizar.png)
 
 ## ¿Cómo funciona DIDI?
 La solución cuenta con una App Mobile, disponible para descarga por parte de quienes deseen gestionar sus credenciales formativo/laborales, transaccionales, patrimoniales y/o identitarias, entre otras.
