@@ -3,6 +3,8 @@ id: emisores-plataforma
 title: Plataforma para la emisión de Credenciales Verificables en ai·di
 ---
 
+La plataforma de emisores (o módulo **Issuer**) es la herramienta de DIDI para la emisión de credenciales verificables.
+
 ## Emisión Manual de Credenciales
 ### Templates
 Para la emisión de Credenciales Verificables, el primer paso del emisor será definir qué campos y datos queremos que contengan. Con estas definiciones se podrá dar de alta uno o más formatos de credencial en el portal web del emisor. A estos modelos los llamaremos *templates* y los vamos a crear desde la solapa de templates.
@@ -38,3 +40,11 @@ _Las credenciales se emiten en formato **jwt**, por lo que pueden ser fácilment
 
 ### Emisores multi-blockchain
 *TBA*
+
+### DIDI Issuer Backend
+**Brief**
+El issuer habilita a distintas entidades autorizadas por el DIDI-server a generar y emitir certificados que podrán ser accedidos por los dueños de los mismos desde la app ai·di.
+
+[**Repositorio**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Issuer-Module)
+
+Para mayor detalle técnico: [Descripción Técnica | Issuer](../developers/solucion/descripcion-tecnica/arquitectura-issuer)
