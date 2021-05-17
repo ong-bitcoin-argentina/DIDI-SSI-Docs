@@ -38,3 +38,6 @@ El **emisor** deberá resolver:
 
 ## Arquitectura
 ![Arquitectura](../images/didi-ssi-arquitectura-componentes.png)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTY2MDMyNDE0OF19
+-->
