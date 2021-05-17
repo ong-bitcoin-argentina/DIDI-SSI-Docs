@@ -66,7 +66,7 @@ Desde esta sección se podrá:
 *TBA*
 
 Las delegaciones permiten otorgarle permisos a otro emisor (y por ende otro DID) de operar como delegado de quien otorga el permiso.
-Para mayor información ver [Flujos de delegación](../developers/descripcion-tecnica/delegation)
+Para mayor información ver [Flujos de delegación](../developers/solucion/descripcion-tecnica/delegation)
 
 Desde esta sección se podrá:
 * Crear delegado
