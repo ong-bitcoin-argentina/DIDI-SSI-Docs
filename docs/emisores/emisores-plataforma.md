@@ -31,7 +31,7 @@ Desde la sección de credenciales pendientes, podemos crear nuevas credenciales,
 
 En resumen, desde esta sección se podrá:
 * Crear credencial				
-* Crear credencial - Caso Nuevo participate			
+* Crear credencial - Caso Nuevo participante			
 * Crear credencial - Caso Cargar participate			
 * Crear credencial - Generar csv				
 * Crear credencial - Cargar csv				
@@ -108,5 +108,5 @@ El issuer habilita a distintas entidades autorizadas por el DIDI-server a genera
 
 Para mayor detalle técnico: [Descripción Técnica | Issuer](../developers/solucion/descripcion-tecnica/arquitectura-issuer)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDQ4MDQ4ODddfQ==
+eyJoaXN0b3J5IjpbLTE2NjQ3MjMzOSwtMjEwNDgwNDg4N119
 -->
