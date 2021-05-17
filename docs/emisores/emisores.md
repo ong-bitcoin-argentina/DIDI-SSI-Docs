@@ -20,3 +20,6 @@ Estos flujos se detallan en la sección ['Emisión de Credenciales'](./emisores-
 
 ![Credencial](../images/ejemplo-credencial.png)
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNDU0Mjg2NzUwXX0=
+-->
