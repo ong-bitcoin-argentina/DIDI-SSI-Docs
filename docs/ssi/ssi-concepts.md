@@ -85,3 +85,6 @@ El método DID se utiliza para resolver un documento DID a DID. Para utilizar un
 - [Verified Credentials](https://www.w3.org/TR/vc-data-model)
 - [Implementation guide](https://www.w3.org/TR/vc-imp-guide/)
 - [Terminología básica](https://www.w3.org/TR/vc-data-model/#terminology)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTMwMTgzMjA2Nl19
+-->
