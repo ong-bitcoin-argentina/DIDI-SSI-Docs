@@ -59,8 +59,8 @@ _Las credenciales se emiten en formato **jwt**, por lo que pueden ser fácilment
 *TBA*
 
 Desde esta sección se podrá:
-* Descargar modelo csv para carga masiva de DIDs				
-* Cargar did mediane csv	
+* Descargar modelo de csv para carga masiva de DIDs				
+* Cargar did mediante un archivo csv	
 * Cargar did mediante QR
 
 ### Solicitud de credenciales por parte de un emisor
@@ -112,5 +112,5 @@ El issuer habilita a distintas entidades autorizadas por el DIDI-server a genera
 
 Para mayor detalle técnico: [Descripción Técnica | Issuer](../developers/solucion/descripcion-tecnica/arquitectura-issuer)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU5NTM0NDIyLC0yMTA0ODA0ODg3XX0=
+eyJoaXN0b3J5IjpbNDk5NDYzNzIwLC0yMTA0ODA0ODg3XX0=
 -->
