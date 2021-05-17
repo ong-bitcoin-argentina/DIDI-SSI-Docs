@@ -73,7 +73,7 @@ El DID es un tipo de identificador que permite una identidad digital verificable
 
 Los DID son persistentes, verificables criptográficamente, y son desreferenciables.
 
-Un Documento DID contiene metada sobre el sujeto DID. Contiene información clave como claves públicas, *service endpoints* y métodos de autentificación. Es un documento que puede accederse desde un registro de datos verificables y contiene información sobre un *DID* específico.
+Un Documento DID contiene metadata sobre el sujeto DID. Contiene información clave como claves públicas, *service endpoints* y métodos de autentificación. Es un documento que puede accederse desde un registro de datos verificables y contiene información sobre un *DID* específico.
 
 ## ¿Qué es un método DID?
 El método DID se utiliza para resolver un documento DID a DID. Para utilizar un DID con una red en particular, es necesario definir un método DID en una especificación de método DID. Un método DID especifica el conjunto de reglas sobre cómo se registra, resuelve, actualiza y revoca un DID en esa red específica.
@@ -86,5 +86,5 @@ El método DID se utiliza para resolver un documento DID a DID. Para utilizar un
 - [Implementation guide](https://www.w3.org/TR/vc-imp-guide/)
 - [Terminología básica](https://www.w3.org/TR/vc-data-model/#terminology)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDQ4MDAyMTYsMTMwMTgzMjA2Nl19
+eyJoaXN0b3J5IjpbMTgzOTM5MzIzNywxMzAxODMyMDY2XX0=
 -->
