@@ -9,7 +9,7 @@ La plataforma de emisores (o módulo **Issuer**) es la herramienta de DIDI para 
 
 ## Emisión Manual de Credenciales
 ### Templates
-Para la emisión de Credenciales Verificables, el primer paso del emisor será definir qué campos y datos queremos que contengan. Con estas definiciones se podrá dar de alta uno o más formatos de credencial en el portal web del emisor. A estos modelos los llamaremos *templates* y los vamos a crear desde la solapa de templates.
+Para la emisión de Credenciales Verificables, el primer paso del emisor será definir qué campos y qué datos queremos que contengan. Con estas definiciones se podrá dar de alta uno o más formatos de credencial en el portal web del emisor. A estos modelos los llamaremos *templates* y los vamos a crear desde la solapa de templates.
 
 *TBA imagen solapa templates*
 
@@ -112,5 +112,6 @@ El issuer habilita a distintas entidades autorizadas por el DIDI-server a genera
 
 Para mayor detalle técnico: [Descripción Técnica | Issuer](../developers/solucion/descripcion-tecnica/arquitectura-issuer)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk5NDYzNzIwLC0yMTA0ODA0ODg3XX0=
+eyJoaXN0b3J5IjpbLTQ3Nzk0NjIyNyw0OTk0NjM3MjAsLTIxMD
+Q4MDQ4ODddfQ==
 -->
