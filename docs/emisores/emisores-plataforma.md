@@ -37,7 +37,7 @@ En resumen, desde esta sección se podrá:
 * Crear credencial - Cargar csv				
 * Visualizar listado credenciales pendientes
 * Visualizar detalles credencial pendiente				
-* Emitir credencial pendiente (dejando, de esta forma, de estar en estado pendiente)
+* Emitir credencial pendiente
 * Editar credencial pendiente				
 * Borrar credencial pendiente				
 * Eliminar credenciales pendientes seleccionadas				
@@ -108,5 +108,5 @@ El issuer habilita a distintas entidades autorizadas por el DIDI-server a genera
 
 Para mayor detalle técnico: [Descripción Técnica | Issuer](../developers/solucion/descripcion-tecnica/arquitectura-issuer)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDQ1NDc1LC0yMTA0ODA0ODg3XX0=
+eyJoaXN0b3J5IjpbODEwNzgzNzQxLC0yMTA0ODA0ODg3XX0=
 -->
