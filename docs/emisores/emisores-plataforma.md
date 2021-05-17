@@ -24,12 +24,11 @@ Desde esta sección se podrá:
 
 ### Creación y emisión de credenciales
 ##### Definición de estados de credenciales:
-* Credenciales pendientes
-* Credenciales emitidas
-* Credenciales revocadas
+* Credenciales pendientes: son aquellas credenciales que están creadas pero aún no fueron emitidas.
+* Credenciales emitidas: son aquellas credenciales que ya fueron emitidas.
+* Credenciales revocadas: son aquellas credenciales que fueron revocadas.
 
 #### Credenciales pendientes
-Por "credenciales pendientes" se entiende aquellas credenciales que están creadas pero aún no fueron emitidas.
 Desde la sección de credenciales pendientes, podemos crear nuevas credenciales, seleccionando el template que deseamos y completar los datos correspondientes. Este proceso se puede hacer manualmente completando los datos requeridos o bien mediante la carga de un archivo csv en caso de requerir crear varias credenciales de ese template para distintos destinatarios.
 
 *TBA imagen solapa credenciales pendientes*
@@ -113,5 +112,5 @@ El issuer habilita a distintas entidades autorizadas por el DIDI-server a genera
 
 Para mayor detalle técnico: [Descripción Técnica | Issuer](../developers/solucion/descripcion-tecnica/arquitectura-issuer)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMTM2MTI0MCwtMjEwNDgwNDg4N119
+eyJoaXN0b3J5IjpbMjU5NTM0NDIyLC0yMTA0ODA0ODg3XX0=
 -->
