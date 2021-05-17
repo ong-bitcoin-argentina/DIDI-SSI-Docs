@@ -50,7 +50,7 @@ Realiza la delegación en blockchain, y posteriormente almacena el resultado en 
 
 Inicialmente, DIDI-Server es capaz de emitir credenciales. Actualmente es el encargado de emitir las credenciales por la verificación de número de teléfono, por la verificación de email y por la verificación de identidad.
 
-Desde el DIDI-Server se relizaron delegaciones a Ronda y a Semillas, otorgandoles la capacidad de emitir credenciales.
+Desde el DIDI-Server se relizaron delegaciones a ronda y a Semillas, otorgandoles la capacidad de emitir credenciales.
 
 
 Para ejemplificar un caso de uso interesante, suponemos la estructura organizacional de una Universidad. Al realizar una delegación a una instancia de DIDI-Issuer-Module (ISSUER MODULE UNIVERSIDAD), este tiene la capacidad de emitir credenciales, y a su vez de realizar delegaciones. Las delegaciones se pueden hacer sobre otras instancias de DIDI-Isuer-Module (ISSUER MODULE EXACTAS (facultad), ISSUER MODULE alumnos (área), ISSUER MODULE Centro Estudiantes (área)) o a un nuevo tipo de Issuer desarrollado por terceros (ISSUER ECONOMICAS (facultad), ISSUER  Secretaría académica (área)).
