@@ -107,3 +107,6 @@ El issuer habilita a distintas entidades autorizadas por el DIDI-server a genera
 [**Repositorio**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Issuer-Module)
 
 Para mayor detalle técnico: [Descripción Técnica | Issuer](../developers/solucion/descripcion-tecnica/arquitectura-issuer)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIxMDQ4MDQ4ODddfQ==
+-->
