@@ -27,6 +27,7 @@ module.exports = {
         ]
       },
 
+      { "Deployment": ['developers/deployment/post-deployment'] },
       { "Troubleshooting": ['developers/troubleshooting/troubleshooting', 'developers/troubleshooting/troubleshooting-rsk', 'developers/troubleshooting/revocation',] },
       { "Multiblockchain": ['developers/multiblockchain/multiblockchain', 'developers/multiblockchain/multiblockchain-scripts',] }
     ],
