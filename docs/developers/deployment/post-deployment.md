@@ -3,13 +3,16 @@ id: post-deployment
 title: Procedimiento Post-Deployment
 ---
 
+
+# Procedimiento Post-Deployment
+
 **IMPORTANTE:** Todos los valores de las variables de entorno utilizadas en esta documentación son meramente ilustrativos y no deben usarse en los ambientes del lector. Para saber los valores de dichas variables será necesario que quien lee examine el archivo `.env` que utilizó para deployar la solución.
 
 ## 1. Delegar capacidad de emitir credenciales
 
 **a. Descripción:** Se comandará a *DIDI Server* para que autorice a otros issuer a emitir credenciales. Esta transacción quedará grabada en:
 
-* La instancia *MongoDB* local al servidor contra el que se ejecute la llamada a la API. Especificamente en la BD `didi-server`, dentro de la colección `issuers`. A continuación, un ejemplo de uno de los objetos que se crean en esa colección extraído de nuestro ambiente de *QA*:
+* La instancia *MongoDB* local al servidor contra el que se ejecute la llamada a la API. Especificamente en la BD `$DIDI_SERVER_MONGO_DB` (ver archivo `.env` utilizado para deployar), dentro de la colección `issuers`. A continuación, un ejemplo de uno de los objetos que se crean en esa colección extraído de nuestro ambiente de *QA*:
 
 		{"_id": {"$oid": "60b0e816e52ad54ba8ea8a21"},
 		"deleted": false,
@@ -26,24 +29,30 @@ title: Procedimiento Post-Deployment
 		BLOCKCHAIN_CONTRACT_LAC="0x488C83c4D1dDCF8f3696273eCcf0Ff4Cf54Bf277"
 		BLOCKCHAIN_CONTRACT_BFA="0x0b2b8e138c38f4ca844dc79d4c004256712de547"
 
-**IMPORTANTE:** Se podrá observar la transacción específica sobre el Smart Contract (así como sobre cualquier otra dirección de la Testnet de RSK) utilizando la herramienta https://explorer.testnet.rsk.co/.
+**IMPORTANTE:** Se podrá observar la transacción específica sobre el Smart Contract en RSK (así como sobre cualquier otra dirección de la Testnet de RSK) utilizando la herramienta https://explorer.testnet.rsk.co/.
 
 **b. Prerequisitos:** 
 
-* Es necesario cargar *RBTC* utilizando https://faucet.rsk.co/ a las siguientes direcciones de la Testnet de **RSK** con anterioridad (ejemplo de nuestro ambiente de *QA*):
+* Es necesario cargar *RBTC* utilizando https://faucet.rsk.co/ a las direcciones de la Blockchain que se esté usando (en nuestro caso usamos la Testnet de **RSK**), las cuales están asociadas a las siguientes variables (ejemplo de nuestro ambiente de *QA*):
 
-		#A. DIDI Server
+		#A. DIDI Server: Dirección del módulo "didi-server" en la blockchain apuntada por $BLOCKCHAIN_URL_MAIN.
 		export DIDI_SERVER_DID="0x7774a33f0a0c810ca079407425a8fb50cc4dde14"
 
-		#B. DIDI Issuer
+		#B. DIDI Issuer: Dirección del módulo "issuer-backend" en la blockchain apuntada por $BLOCKCHAIN_URL_MAIN.
 		export DIDI_ISSUER_DID="0xb9ab0362c18bb3e9b68af4854ffb71834759d6be"
 
 		#C. DIDI Ronda
+
+		#C.1. Dirección del módulo "ronda" en la blockchain apuntada por $BLOCKCHAIN_URL_MAIN.
 		export RONDA_DID="did:ethr:0xda9ee55b7237365b1438cf569e1913268acdf8be"
+		
+		#C.2. Dirección del Owner del Smart Contract de "ronda" en la blockchain apuntada por $BLOCKCHAIN_URL_MAIN.
 		export RONDA_CONTRACT_OWNER="0xbc41b9df8ebdb88dc0f982ee6ab7feebbf72aaa9"
+		
+		#C.3. Dirección para refill automático de la wallet C.1.
 		export RONDA_REFILL_ORIGIN_ACCOUNT="0xa4ad4b5a84b25a6b254ac5e051980eeebbe6ba1f"
 
-* También hay que cargarle *ether* a las mismas direcciones en **BFA** solicitandoló al canal de Telegram oficial: *BFA Tec*.
+* Cargarle *ether* a las mismas direcciones en **BFA** solicitandoló al canal de Telegram oficial: [https://t.me/bfatec](https://t.me/bfatec).
 
 **c. Procedimiento:** Se debe realizar una llamada a la API del *DIDI Server* mediante el siguiente comando (ejemplo de nuestro ambiente de *QA*):
 
@@ -136,12 +145,19 @@ title: Procedimiento Post-Deployment
 			   "errorCode": "IS_INVALID",
 			   "message": "El emisor no esta autorizado para emitir certificados, por favor contacte a un administrador para obtener dicha autorizacion."
 			}
+			
+* **Posibles causas de que no se delegue mi issuer**
+	* El DID utilizado para efectuar la llamada a la API en el **procedimiento c** no comienza con `did:ethr:` (en caso de tratarse de una dirección de la red `$BLOCKCHAIN_URL_MAIN`) o con el prefijo correspondiente a la Blockchain que se esté usando (ej: `did:ethr:bfa:` para **BFA**).
+	* El DID utilizado para efectuar la llamada a la API en el **procedimiento c** no es igual al que se usó en la **verificación d**. Recordar además que ambos deben comenzar con el mismo prefijo (`did:ethr: ...`).
+	* Verificar que se haya efectuado el procedimiento descrito en **b. Prerequisitos**.
+	* Si se procedió a efectuar las tres verificaciones anteriores y el resultado fue correcto, pero aún así el issuer sigue sin estar delegado; verificar si en la instancia *MongoDB* local al DIDI Server, especificamente en la BD `$DIDI_SERVER_MONGO_DB` (ver archivo `.env` utilizado para deployar), dentro de la colección `issuers` , existe un objeto como el de la **descripción a**. Si es así, verificar que el campo `"did"` de dicho objeto coincida con el que se está consultando.
+	* En caso de que no se cree el objeto correspondiente en la BD, o que exista pero aún así la llamada a la API para verificar la delegación del issuer siga diciendo que no está autorizado a emitir credenciales, comunicarse con **Soporte del Proyecto DIDI**. 
 
 ## 2. Agregar app/BE autorizado
 
 **a. Descripción:** Por cada servicio de *DIDI* (identificable mediante un *DID*) que sea utilizado como backend de una aplicación diferente de *ai.di*, se lo debe a agregar como autorizado para ser apuntado por una app. Esta transacción queda grabada en:
 
-* La instancia *MongoDB* local al servidor contra el que se ejecute la llamada a la API. Especificamente en la BD `didi-server`, dentro de la colección `appauths`. A continuación, un ejemplo de uno de los objetos que se crean en esa colección extraído de nuestro ambiente de *QA*:
+* La instancia *MongoDB* local al servidor contra el que se ejecute la llamada a la API. Especificamente en la BD `$DIDI_SERVER_MONGO_DB` (ver archivo `.env` utilizado para deployar), dentro de la colección `appauths`. A continuación, un ejemplo de uno de los objetos que se crean en esa colección extraído de nuestro ambiente de *QA*:
 
 		{"_id":{"$oid":"60b689d6aecb3e00ca24f5bf"},
 		"createdOn":{"$date":"2021-06-01T19:23:05.715Z"},
@@ -204,7 +220,7 @@ title: Procedimiento Post-Deployment
 			        "__v": 0}
 			}
 
-	* La app/BE no está autorizad0:
+	* La app/BE no está autorizado:
 
 			Status: 500 Internal Server Error.
 
@@ -213,6 +229,12 @@ title: Procedimiento Post-Deployment
 			    "errorCode": "APP_DID_NOT_FOUND",
 			    "message": "La Aplicación con el DID did:ethr:0x7774a33f0a0c810ca079407425a8fb50cc4dde14 no esta autorizada."
 			}
+			
+* **Posibles causas de que no se autorice a mi app/BE:**
+	* El DID utilizado para efectuar la llamada a la API en el **procedimiento b** no comienza con `did:ethr:` (en caso de tratarse de una dirección de la red `$BLOCKCHAIN_URL_MAIN`) o con el prefijo correspondiente a la Blockchain que se esté usando (ej: `did:ethr:bfa:` para **BFA**).
+	* El DID utilizado para efectuar la llamada a la API en el **procedimiento b** no es igual al que se usó en la **verificación c**. Recordar además que ambos deben comenzar con el mismo prefijo (`did:ethr: ...`).
+	* Si se procedió a efectuar ambas verificaciones anteriores y el resultado fue correcto, pero aún así la app/BE sigue sin estar autorizado; verificar si en la instancia *MongoDB* local al DIDI Server, especificamente en la BD `$DIDI_SERVER_MONGO_DB` (ver archivo `.env` utilizado para deployar), dentro de la colección `appauths` , existe un objeto como el de la **descripción a**. Si es así, verificar que el campo `"did"` de dicho objeto coincida con el que se está consultando.
+	* En caso de que no se cree el objeto correspondiente en la BD, o que exista pero aún así la llamada a la API para verificar la app/BE siga diciendo que no está autorizado, comunicarse con **Soporte del Proyecto DIDI**. 
 
 ## 3. Crear usuarios administradores para los issuer.
 
@@ -221,7 +243,7 @@ title: Procedimiento Post-Deployment
 	#DIDI Issuer
 	https://issuer.qa.didi.org.ar/
 
-**b. Prerequisitos:** La solución de *DIDI* se debe haber deployado con con la variable `ENABLE_INSECURE_ENDPOINTS` en *true* en el archivo `.env`.
+**b. Prerequisitos:** La solución de *DIDI* se debe haber deployado con la variable `ENABLE_INSECURE_ENDPOINTS` en *true* en el archivo `.env`.
 
 * **IMPORTANTE:** Luego de haber dado de alta los usuarios administradores, por motivos de seguridad es recomendable re-deployar la solución pero esta vez con la variable en *false*.
 
