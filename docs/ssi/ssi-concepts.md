@@ -21,7 +21,7 @@ Estos principio nos dan una idea general de que la identidad auto-soberana se ba
 
 
 ## ¿Qué es la identidad digital auto-soberana (SSI)?
-Todo el mundo (incluidas las empresas y las IoT) tiene diferentes relaciones o conjuntos únicos de información de identificación. Esta información puede ser cosas como la fecha de nacimiento, la ciudadanía, los títulos universitarios o las licencias comerciales. Este conjunto de información, entre otras, es lo que confroma nuestra identidad. Lo que en el mundo físico implica tarjetas o certificados, en SSI hablamos de credenciales verificables.
+Todo el mundo (incluidas las empresas y las IoT) tiene diferentes relaciones o conjuntos únicos de información de identificación. Esta información puede ser cosas como la fecha de nacimiento, la ciudadanía, los títulos universitarios o las licencias comerciales. Este conjunto de información, entre otras, es lo que conforma nuestra identidad. Lo que en el mundo físico implica tarjetas o certificados, en SSI hablamos de credenciales verificables.
 
 SSI significa que el individuo o la organización (**holders**) gestiona los elementos que componen su identidad y controla el acceso a esas credenciales, de forma digital, teniendo uno o varios identificadores y pudiendo presentar *claims* relacionados con esos identificadores evitando la necesidad de pasar por un tercero como intermediario.
 
@@ -73,7 +73,7 @@ El DID es un tipo de identificador que permite una identidad digital verificable
 
 Los DID son persistentes, verificables criptográficamente, y son desreferenciables.
 
-Un Documento DID contiene metada sobre el sujeto DID. Contiene información clave como claves públicas, *service endpoints* y métodos de autentificación. Es un documento que puede accederse desde un registro de datos verificables y contiene información sobre un *DID* específico.
+Un Documento DID contiene metadata sobre el sujeto DID. Contiene información clave como claves públicas, *service endpoints* y métodos de autentificación. Es un documento que puede accederse desde un registro de datos verificables y contiene información sobre un *DID* específico.
 
 ## ¿Qué es un método DID?
 El método DID se utiliza para resolver un documento DID a DID. Para utilizar un DID con una red en particular, es necesario definir un método DID en una especificación de método DID. Un método DID especifica el conjunto de reglas sobre cómo se registra, resuelve, actualiza y revoca un DID en esa red específica.
@@ -85,3 +85,6 @@ El método DID se utiliza para resolver un documento DID a DID. Para utilizar un
 - [Verified Credentials](https://www.w3.org/TR/vc-data-model)
 - [Implementation guide](https://www.w3.org/TR/vc-imp-guide/)
 - [Terminología básica](https://www.w3.org/TR/vc-data-model/#terminology)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTgzOTM5MzIzNywxMzAxODMyMDY2XX0=
+-->

@@ -9,7 +9,7 @@ La plataforma de emisores (o módulo **Issuer**) es la herramienta de DIDI para 
 
 ## Emisión Manual de Credenciales
 ### Templates
-Para la emisión de Credenciales Verificables, el primer paso del emisor será definir qué campos y datos queremos que contengan. Con estas definiciones se podrá dar de alta uno o más formatos de credencial en el portal web del emisor. A estos modelos los llamaremos *templates* y los vamos a crear desde la solapa de templates.
+Para la emisión de Credenciales Verificables, el primer paso del emisor será definir qué campos y qué datos queremos que contengan. Con estas definiciones se podrá dar de alta uno o más formatos de credencial en el portal web del emisor. A estos modelos los llamaremos *templates* y los vamos a crear desde la solapa de templates.
 
 *TBA imagen solapa templates*
 
@@ -23,6 +23,10 @@ Desde esta sección se podrá:
 * Eliminar template
 
 ### Creación y emisión de credenciales
+##### Definición de estados de credenciales:
+* Credenciales pendientes: son aquellas credenciales que están creadas pero aún no fueron emitidas.
+* Credenciales emitidas: son aquellas credenciales que ya fueron emitidas.
+* Credenciales revocadas: son aquellas credenciales que fueron revocadas.
 
 #### Credenciales pendientes
 Desde la sección de credenciales pendientes, podemos crear nuevas credenciales, seleccionando el template que deseamos y completar los datos correspondientes. Este proceso se puede hacer manualmente completando los datos requeridos o bien mediante la carga de un archivo csv en caso de requerir crear varias credenciales de ese template para distintos destinatarios.
@@ -31,13 +35,13 @@ Desde la sección de credenciales pendientes, podemos crear nuevas credenciales,
 
 En resumen, desde esta sección se podrá:
 * Crear credencial				
-* Crear credencial - Caso Nuevo participate			
-* Crear credencial - Caso Cargar participate			
+* Crear credencial - Caso Nuevo participante			
+* Crear credencial - Caso Cargar participante			
 * Crear credencial - Generar csv				
 * Crear credencial - Cargar csv				
 * Visualizar listado credenciales pendientes
 * Visualizar detalles credencial pendiente				
-* Emitir credencial pendiente (dejando, de esta forma, de estar en estado pendiente)
+* Emitir credencial pendiente
 * Editar credencial pendiente				
 * Borrar credencial pendiente				
 * Eliminar credenciales pendientes seleccionadas				
@@ -55,8 +59,8 @@ _Las credenciales se emiten en formato **jwt**, por lo que pueden ser fácilment
 *TBA*
 
 Desde esta sección se podrá:
-* Descargar modelo csv para carga masiva de DIDs				
-* Cargar did mediane csv	
+* Descargar modelo de csv para carga masiva de DIDs				
+* Cargar did mediante un archivo csv	
 * Cargar did mediante QR
 
 ### Solicitud de credenciales por parte de un emisor
@@ -107,3 +111,7 @@ El issuer habilita a distintas entidades autorizadas por el DIDI-server a genera
 [**Repositorio**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Issuer-Module)
 
 Para mayor detalle técnico: [Descripción Técnica | Issuer](../developers/solucion/descripcion-tecnica/arquitectura-issuer)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTQ3Nzk0NjIyNyw0OTk0NjM3MjAsLTIxMD
+Q4MDQ4ODddfQ==
+-->
