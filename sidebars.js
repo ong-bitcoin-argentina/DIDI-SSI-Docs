@@ -33,5 +33,7 @@ module.exports = {
       { "Troubleshooting": ['developers/troubleshooting/troubleshooting', 'developers/troubleshooting/troubleshooting-rsk', 'developers/troubleshooting/revocation',] },
       { "Multiblockchain": ['developers/multiblockchain/multiblockchain', 'developers/multiblockchain/multiblockchain-scripts',] }
     ],
+
+    "Changelog": ['changelog',],
   },
 };
