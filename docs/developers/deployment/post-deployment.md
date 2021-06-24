@@ -3,9 +3,6 @@ id: post-deployment
 title: Procedimiento Post-Deployment
 ---
 
-
-# Procedimiento Post-Deployment
-
 **IMPORTANTE:** Todos los valores de las variables de entorno utilizadas en esta documentación son meramente ilustrativos y no deben usarse en los ambientes del lector. Para saber los valores de dichas variables será necesario que quien lee examine el archivo `.env` que utilizó para deployar la solución.
 
 ## 1. Delegar capacidad de emitir credenciales
