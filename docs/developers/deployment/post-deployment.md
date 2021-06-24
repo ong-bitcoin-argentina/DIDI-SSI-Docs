@@ -233,7 +233,7 @@ title: Procedimiento Post-Deployment
 	* Si se procedió a efectuar ambas verificaciones anteriores y el resultado fue correcto, pero aún así la app/BE sigue sin estar autorizado; verificar si en la instancia *MongoDB* local al DIDI Server, especificamente en la BD `$DIDI_SERVER_MONGO_DB` (ver archivo `.env` utilizado para deployar), dentro de la colección `appauths` , existe un objeto como el de la **descripción a**. Si es así, verificar que el campo `"did"` de dicho objeto coincida con el que se está consultando.
 	* En caso de que no se cree el objeto correspondiente en la BD, o que exista pero aún así la llamada a la API para verificar la app/BE siga diciendo que no está autorizado, comunicarse con **Soporte del Proyecto DIDI**. 
 
-## 3. Crear usuarios administradores para los issuer.
+## 3. Crear usuarios administradores para los issuer
 
 **a. Descripción:** Se darán de alta usuarios administradores para los módulos *Issuer* (genéricos) de *DIDI*. Estos son aquellos bajo URLs como las siguientes (ejemplo para nuestro ambiente de QA):
 
