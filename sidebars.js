@@ -4,7 +4,7 @@ module.exports = {
 
     "Identidad digital auto-soberana": ['ssi/ssi-concepts',],
 
-    "ai·di": ['aidi/aidi-descripcion', 'aidi/aidi-creacionCuenta', 'aidi/aidi-validacionIdentidad', 'aidi/aidi-solicitarCredenciales', 'aidi/aidi-beneficios', 'aidi/aidi-shareCredentials',],
+    "ai·di": ['aidi/aidi-descripcion', 'aidi/aidi-funcional', 'aidi/aidi-creacionCuenta', 'aidi/aidi-validacionIdentidad', 'aidi/aidi-solicitarCredenciales', 'aidi/aidi-beneficios', 'aidi/aidi-shareCredentials',],
 
     "Emisores": ['emisores/emisores', 'emisores/emisores-plataforma', 'emisores/emisores-implementacion', 'emisores/emisores-plataforma-de-referencia'],
 
