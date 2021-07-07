@@ -8,7 +8,7 @@ module.exports = {
 
     "Emisores": ['emisores/emisores', 'emisores/emisores-plataforma', 'emisores/emisores-implementacion', 'emisores/emisores-plataforma-de-referencia'],
 
-    "ronda": ['ronda/ronda-descripcion', 'ronda/ronda-aidi'],
+    "ronda": ['ronda/ronda-descripcion', 'ronda/ronda-aidi', 'ronda/ronda-funcional'],
 
     "Contribuciones": ['contribuciones/contribuciones', 'contribuciones/code-fo-conduct'],
 
