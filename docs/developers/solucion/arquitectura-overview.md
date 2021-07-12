@@ -9,7 +9,7 @@ Se describen a continuación los componentes de Proyecto DIDI. Para mayor detall
 
 ## DIDI Issuer module
 
-El issuer permite la creación de templates, pre credenciales y emisión de credenciales. Una vez emitidas las credenciales se almacenan en Mouro y son accedidas los los usuarios desde ai·di.
+El issuer es la aplicación para emisores DIDI que permite la creación de templates, pre credenciales y emisión de credenciales. Una vez emitidas las credenciales se almacenan en Mouro y son accedidas por los usuarios desde ai·di.
 
 [**Repositorio backend**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Issuer-Module)
 
@@ -46,7 +46,7 @@ DIDI Server es el componente CENTRAL de Proyecto DIDI. Su responsabilidades son:
 * Comunición con users mediante push, sms y email.
 * Gestión de ShareRequest
 * Gestión de Presentation
-* Comunicación con Semillas
+* Comunicación con el emisor Semillas (middleware desarrollado para la automatización de la emisión de credenciales para este caso de implementación).
 * Verificación de identidad con RENAPER
 * Gestión de emisores
 * Gestión de aplicaciones
