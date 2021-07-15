@@ -265,8 +265,11 @@ title: Procedimiento Post-Deployment
 ### Creación de did para la aplicación
 
 El primer paso para identificar nuestra aplicación es generar su `did`. Se recomienda utilizar `uport-credentials` descripta en la [documentación oficial](https://developer.uport.me/credentials/login#setup). 
-Directamente puede utilizar el script de deployment [key-generator.js](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Deploy/blob/master/deploy-tools/key-generator.js). Se debe tomar el par de claves pública y privada. Ejecutar:
-node key-generator.js
+Directamente puede utilizar el script de deployment [key-generator.js](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Deploy/blob/master/deploy-tools/key-generator.js). Se debe tomar el par de claves pública y privada. 
+
+Ejecutar:
+
+	node key-generator.js
 
 ### Autenticación de aplicación con didi server
 
