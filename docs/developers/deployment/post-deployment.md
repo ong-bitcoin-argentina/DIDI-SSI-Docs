@@ -260,4 +260,128 @@ title: Procedimiento Post-Deployment
 
 **d. Verificación:** Ingresar al frontend del issuer y utilizar el usuario creado para efectuar el login.
 
+## 4. Integración entre apps a nivel backend
 
+### Creación de did para la aplicación
+
+El primer paso para identificar nuestra aplicación es generar su `did`. Se recomienda utilizar `uport-credentials` descripta en la [documentación oficial](https://developer.uport.me/credentials/login#setup). 
+Directamente puede utilizar el script de deployment [key-generator.js](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Deploy/blob/master/deploy-tools/key-generator.js). Se debe tomar el par de claves pública y privada. 
+
+Ejecutar:
+
+	node key-generator.js
+
+### Autenticación de aplicación con didi server
+
+Se utiliza el endpoint [/api/1.0/didi/appAuth](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Server/blob/develop/routes/AppUserAuthRoutes.js#L65) para autorizar un app. Como parámetros le pasaremos el DID generado anteriormente y el nombre de la aplicación. 
+
+Ejemplo:
+
+	APP_DID: Did generado en el paso anterior.
+	APP_NAME: Nombre con el cual va a ser identificada la aplicación.
+
+	curl -X 'POST' \
+		'https://api.qa.didi.org.ar/api/1.0/didi/appAuth' \
+		-H 'accept: */*' \
+		-H 'Content-Type: application/json' \
+		-d '{
+		"did": "APP_DID",
+		"name": "APP_NAME"
+	}'
+
+### Establecer relación entre la app y DIDI Server (dado un usuario)
+
+El siguiente paso es crear la relación de `app<-->user` en DIDI Server. Se deben generar dos JWT, uno firmado por el usuario y otro firmado por la app. Nuevamente se utiliza  `uport-credentials`.
+
+userJWT: 
+
+	USER_DID: did del usuario a conectar
+	DIDI_SERVER_DID: did DIDI Server
+	DIDI_SERVER_DID_ADRESS: Dirección del didi server extraida del did.(Sin el did:ethr: )
+	APP_NAME: Nombre de la aplicación definido en el paso anterior.
+
+	import { getSignerForHDPath } from "react-native-uport-signer";	(Esta librería se utiliza en el caso de ser una app mobile, para web apps se puede utilizar did-jwt)
+	import { Credentials } from "uport-credentials";
+
+	const createToken = (USER_DID) => {
+		const credentialsParams: Settings = {};
+		credentialsParams.signer = getSignerForHDPath(DIDI_SERVER_DID_ADRESS); 
+		credentialsParams.did = USER_DID;
+
+		const cred = new Credentials(credentialsParams);
+
+		return cred.createVerification({
+			sub: DIDI_SERVER_DID, 
+			claim: { name: "APP_NAME" }
+		});
+	};
+
+[Implementación en aidi](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Mobile/blob/4fb98e0df59623e534afdfcb42927e4571c2af2e/src/src/presentation/util/appRouter.tsx#L100).
+
+appJWT: 
+
+	const didJWT = require("did-jwt");
+
+	const createJWTForAidi = () => {
+		const signer = didJWT. (APP_PRIVATE_KEY);
+		return await didJWT.createJWT(
+			{ name: "APP_NAME" },
+			{ alg: "ES256K-R", issuer: APP_DID, signer }
+		);
+	}
+
+[Implementación en ronda](https://github.com/ong-bitcoin-argentina/DIDI-Ronda/blob/775825fff2705815d90580ab8ce68fc1aee7f63f/api/services/aidi.js#L20).
+
+Se puede obtener mayor información en la documentación de cada biblioteca: 
+
+[Repositorio uPort - React Native uPort Signer](https://github.com/uport-project/react-native-uport-signer).
+
+[Repositorio Decentralized Identity - DID JWT](https://github.com/decentralized-identity/did-jwt).
+
+[uPort Credentials](https://www.npmjs.com/package/uport-credentials).
+
+Luego de tener creados ambos JWT, utilizamos el endpoint [/api/1.0/didi/userApp/validateUser](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Server/blob/1e080e76f88fa35fc153b993a7476a60b82500f9/routes/AppUserAuthRoutes.js#L127).
+Este endpoint obtiene información de un usuario registrado en aidi y en caso de que no exista la crea.
+
+Pasamos parámetros:
+
+	Header:
+		‘Authorization’:  (appJWT creado mas arriba)
+	Body: {
+		‘userJWT’:  (userJWT creado más arriba)
+	}
+
+Nos va a devolver como respuesta la siguiente información:  
+- mail
+- phoneNumber
+- did
+- name
+- lastName
+- imageId
+- imageUrl
+- appName
+
+## 5. Integración entre apps a nivel frontend
+
+### Conexión entre apps utilizando el login de aidi
+
+Para facilitar la integración entre las distintas aplicaciones o páginas web con aidi se utilizaron Dynamic links creados en Firebase. En la [siguiente sección](./firebase-config) se ejemplifica una solución para conectar una aplicacion mobile.
+Una vez configurado lo anterior, se debe agregar en aidi las referencias a los dynamic links creados.
+
+	URL_LOGIN: dynamic link que apunta al login de aidi
+	URL_CREDENTIALS: servicio en particular (no es necesario para la conexión con aidi)
+
+	const links = {
+		login: {
+			deepLink: "aidi://login",
+			dynamicLink: `${Config.URL_LOGIN}`,
+		},
+		credentials: {
+			deepLink: `aidi://credentials/ronda`,
+			dynamicLink: `${Config.URL_CREDENTIALS}`,
+		},
+		playstore: "https://play.google.com/apps/internaltest/4699395559909911910",
+		urlPlaystore: "https://play.google.com/store/apps/details?id=com.aidi",
+	};
+
+[Implementación en ronda](https://github.com/ong-bitcoin-argentina/DIDI-Ronda/blob/3be9626a4f209b272a9f06c436d69aff54b93c79/app/src/utils/appRouter.js#L6).
