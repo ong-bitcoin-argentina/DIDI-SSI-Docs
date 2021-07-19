@@ -73,9 +73,9 @@ Seleccionando cualquiera de los iconos podemos agregar nuestras apps o paginas w
 
 ![Dynamic Links](../../images/firebase-config/12.png)
 
-`loginSuccess`: DeepLink en aidi el cual si se auténtico bien envía el token hacia ronda, en caso negativo lo retorna vacío.
+`loginSuccess`: DeepLink en aidi el cual si se autenticó bien envía el token hacia ronda, en caso negativo lo retorna vacío.
 
-`login`: DeepLink en ronda, donde hace referencia al login de aidi, en caso de no estar instalada, redirige a la descarga desde Google Play Store.
+`login`: DeepLink en ronda, donde hace referencia al login de ai·di que, en caso de no estar instalada en el dispositivo, redirige a la descarga de ai·di desde Google Play Store.
 
 `ronda credentials`: DeepLink en ronda, donde se pide las credenciales cargadas en aidi.
 

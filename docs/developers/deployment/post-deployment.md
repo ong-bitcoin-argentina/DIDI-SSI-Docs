@@ -334,11 +334,11 @@ appJWT:
 
 Se puede obtener mayor información en la documentación de cada biblioteca: 
 
-https://github.com/uport-project/react-native-uport-signer
+[Repositorio uPort - React Native uPort Signer](https://github.com/uport-project/react-native-uport-signer).
 
-https://github.com/decentralized-identity/did-jwt
+[Repositorio Decentralized Identity - DID JWT](https://github.com/decentralized-identity/did-jwt).
 
-https://www.npmjs.com/package/uport-credentials
+[uPort Credentials](https://www.npmjs.com/package/uport-credentials).
 
 Luego de tener creados ambos JWT, utilizamos el endpoint [/api/1.0/didi/userApp/validateUser](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Server/blob/1e080e76f88fa35fc153b993a7476a60b82500f9/routes/AppUserAuthRoutes.js#L127).
 Este endpoint obtiene información de un usuario registrado en aidi y en caso de que no exista la crea.
