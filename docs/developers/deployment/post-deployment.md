@@ -365,7 +365,7 @@ Nos va a devolver como respuesta la siguiente información:
 
 ### Conexión entre apps utilizando el login de aidi
 
-Para facilitar la integración entre las distintas aplicaciones o páginas web con aidi se utilizaron Dynamic links creados en Firebase. En el [siguiente link](https://docs.google.com/presentation/d/1lRNRqD6mmOZRnRpIpWinEb81blEsDoMN/edit#slide=id.p1) se ejemplifica una solución para conectar una aplicacion mobile.
+Para facilitar la integración entre las distintas aplicaciones o páginas web con aidi se utilizaron Dynamic links creados en Firebase. En la [siguiente sección](./firebase-config) se ejemplifica una solución para conectar una aplicacion mobile.
 Una vez configurado lo anterior, se debe agregar en aidi las referencias a los dynamic links creados.
 
 	URL_LOGIN: dynamic link que apunta al login de aidi
