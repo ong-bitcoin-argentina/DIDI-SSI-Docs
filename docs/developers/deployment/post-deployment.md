@@ -260,7 +260,14 @@ title: Procedimiento Post-Deployment
 
 **d. Verificación:** Ingresar al frontend del issuer y utilizar el usuario creado para efectuar el login.
 
-## 4. Integración entre apps a nivel backend
+## 4. Definir un template de credenciales por defecto
+
+**a. Descripción:** En caso de que los templates de credenciales sean inicializados junto con la base de datos dentro del mongo-init, se deberá designar uno de los mismos como el template por defecto al crear las credenciales.
+
+**b. Procedimiento:** En el cliente del issuer (https://issuer.qa.didi.org.ar/ en caso del ambiente qa), luego de loguearse entrar en la pestaña de configuración y seleccionar el template deseado a establecer como default.
+
+
+## 5. Integración entre apps a nivel backend
 
 ### Creación de did para la aplicación
 
