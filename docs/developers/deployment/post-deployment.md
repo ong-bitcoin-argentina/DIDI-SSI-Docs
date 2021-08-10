@@ -53,12 +53,16 @@ title: Procedimiento Post-Deployment
 
 **c. Procedimiento:** Se debe realizar una llamada a la API del *DIDI Server* mediante el siguiente comando (ejemplo de nuestro ambiente de *QA*):
 
-	curl --location --request POST 'https://api.qa.didi.org.ar/api/1.0/didi/issuer' \
-	--header 'Content-Type: application/x-www-form-urlencoded' \
-	--data-urlencode 'name=DIDI Issuer QA' \
-	--data-urlencode 'did=did:ethr:0xb9ab0362c18bb3e9b68af4854ffb71834759d6be' \
-	--data-urlencode 'callbackUrl=url' \
-	--data-urlencode 'token=asdf'
+curl -X 'POST' \
+  'https://api.qa.didi.org.ar/api/1.0/didi/issuer' \
+  -H 'accept: */*' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'did=did:ethr:0xb9ab0362c18bb3e9b68af4854ffb71834759d6be' \
+  -F 'name=DIDI Issuer QA' \
+  -F 'description= Descripción del Issuer' \
+  -F 'callbackUrl=url' \
+  -F 'token=asdf' \
+  -F 'file=@imagen.jpg;type=image/jpeg'
 
 * El **endpoint** de la llamada es el valor de la variable `DIDI_SERVER_API` en el `.env` de *DIDI*.
 
