@@ -45,9 +45,13 @@ Otra funcionalidad de interés es la de crear shareRequest.
 
 > /issuer/:did/refresh - Refrescar autorización de un emisor para emitir certificados
 
+> /issuer/list - Obtener una lista con la información de los emisores autorizados
+
+> ​/issuer​/:did​/image - Obtener la o las imagenes de un emissor autorizado a partir de su did
+
 > /issuer/:did (get) - Obtener nombre de un emisor autorizado a partir de su did
 
-> /issuer/:did (put) - Editar el nombre de un emisor autorizado a partir de su did
+> /issuer/:did (patch) - Editar la información de un emisor autorizado a partir de su did
 
 #### Mail
 Estas rutas se utilizan para enviar y reenviar el mail con el código de validación y su posterior verificación. Se encuentran protegidas por rate-limit.
