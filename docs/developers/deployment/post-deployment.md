@@ -53,16 +53,16 @@ title: Procedimiento Post-Deployment
 
 **c. Procedimiento:** Se debe realizar una llamada a la API del *DIDI Server* mediante el siguiente comando (ejemplo de nuestro ambiente de *QA*):
 
-curl -X 'POST' \
-  'https://api.qa.didi.org.ar/api/1.0/didi/issuer' \
-  -H 'accept: */*' \
-  -H 'Content-Type: multipart/form-data' \
-  -F 'did=did:ethr:0xb9ab0362c18bb3e9b68af4854ffb71834759d6be' \
-  -F 'name=DIDI Issuer QA' \
-  -F 'description= Descripción del Issuer' \
-  -F 'callbackUrl=url' \
-  -F 'token=asdf' \
-  -F 'file=@imagen.jpg;type=image/jpeg'
+	curl -X 'POST' \
+		'https://api.qa.didi.org.ar/issuer' \
+		-H 'accept: */*' \
+		-H 'Content-Type: multipart/form-data' \
+		-F 'did=did:ethr:0xb9ab0362c18bb3e9b68af4854ffb71834759d6be' \
+		-F 'name=DIDI Issuer QA' \
+		-F 'description= Descripción del Issuer' \
+		-F 'callbackUrl=url' \
+		-F 'token=asdf' \
+		-F 'file=@imagen.jpg;type=image/jpeg'
 
 * El **endpoint** de la llamada es el valor de la variable `DIDI_SERVER_API` en el `.env` de *DIDI*.
 
@@ -110,9 +110,9 @@ curl -X 'POST' \
 
 	*	`token`: No es obligatorio (en todo caso usar uno fake). Token a utilizar para hacer la API call contra la "callbackurl".
 
-**d. Verificación:** Además de verificar las transacciones en *MongoDB* y el *Smart Contract*, luego de al menos 5 min. de haber dado de alta el issuer correspondiente, se puede utilizar la siguiente API call.
+**d. Verificación:** Además de verificar las transacciones en *MongoDB* y el *Smart Contract*, luego de al menos 5 min. de haber dado de alta el issuer correspondiente, se puede utilizar la siguiente API call:
 
-	curl --location --request POST 'https://api.qa.didi.org.ar/api/1.0/didi/issuer/verify' \
+	curl --location --request POST 'https://api.qa.didi.org.ar/didi/issuer/verify' \
 	--header 'Content-Type: application/x-www-form-urlencoded' \
 	--data-urlencode 'did=did:ethr:0xb9ab0362c18bb3e9b68af4854ffb71834759d6be'
 
@@ -168,7 +168,7 @@ curl -X 'POST' \
 
 **b. Procedimiento:** Se debe realizar una llamada a la API del *DIDI Server* mediante el siguiente comando (ejemplo para nuestro ambiente de *QA*):
 
-	curl --location --request POST 'https://api.qa.didi.org.ar/api/1.0/didi/appAuth' \
+	curl --location --request POST 'https://api.qa.didi.org.ar/appAuth' \
 	--header 'Content-Type: application/x-www-form-urlencoded' \
 	--data-urlencode 'did=did:ethr:0xda9ee55b7237365b1438cf569e1913268acdf8be' \
 	--data-urlencode 'name=Ronda QA'
@@ -199,7 +199,7 @@ curl -X 'POST' \
 
 **c. Verificación:** Además de verificar el contenido en *MongoDB*, se puede utilizar la siguiente API Call:
 
-	curl --location --request GET 'https://api.qa.didi.org.ar/api/1.0/didi/appAuth/did:ethr:0xda9ee55b7237365b1438cf569e1913268acdf8be'
+	curl --location --request GET 'https://api.qa.didi.org.ar/appAuth/did:ethr:0xda9ee55b7237365b1438cf569e1913268acdf8be'
 
 * **Utilidad:** Dado un *DID*, verifica si existe un BE autorizado para ser apuntado por una app identificado con él.
 
@@ -250,7 +250,7 @@ curl -X 'POST' \
 
 **c. Procedimiento:** Se debe realizar una llamada a la API del issuer correspondiente mediante el siguiente comando (ejemplo para nuestro ambiente de QA con password fake):
 
-	curl --location --request POST 'https://api.issuer.qa.didi.org.ar/api/1.0/didi_issuer/user/admin' \
+	curl --location --request POST 'https://api.issuer.qa.didi.org.ar/user/admin' \
 	--header 'Content-Type: application/x-www-form-urlencoded' \
 	--data-urlencode 'name=adminabc' \
 	--data-urlencode 'password=adminabc'
@@ -284,7 +284,7 @@ Ejecutar:
 
 ### Autenticación de aplicación con didi server
 
-Se utiliza el endpoint [/api/1.0/didi/appAuth](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Server/blob/develop/routes/AppUserAuthRoutes.js#L65) para autorizar un app. Como parámetros le pasaremos el DID generado anteriormente y el nombre de la aplicación. 
+Se utiliza el endpoint [/appAuth](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Server/blob/develop/routes/AppUserAuthRoutes.js#L65) para autorizar un app. Como parámetros le pasaremos el DID generado anteriormente y el nombre de la aplicación. 
 
 Ejemplo:
 
@@ -292,7 +292,7 @@ Ejemplo:
 	APP_NAME: Nombre con el cual va a ser identificada la aplicación.
 
 	curl -X 'POST' \
-		'https://api.qa.didi.org.ar/api/1.0/didi/appAuth' \
+		'https://api.qa.didi.org.ar/appAuth' \
 		-H 'accept: */*' \
 		-H 'Content-Type: application/json' \
 		-d '{
@@ -351,7 +351,7 @@ Se puede obtener mayor información en la documentación de cada biblioteca:
 
 [uPort Credentials](https://www.npmjs.com/package/uport-credentials).
 
-Luego de tener creados ambos JWT, utilizamos el endpoint [/api/1.0/didi/userApp/validateUser](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Server/blob/1e080e76f88fa35fc153b993a7476a60b82500f9/routes/AppUserAuthRoutes.js#L127).
+Luego de tener creados ambos JWT, utilizamos el endpoint [/userApp/validateUser](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Server/blob/1e080e76f88fa35fc153b993a7476a60b82500f9/routes/AppUserAuthRoutes.js#L127).
 Este endpoint obtiene información de un usuario registrado en aidi y en caso de que no exista la crea.
 
 Pasamos parámetros:
