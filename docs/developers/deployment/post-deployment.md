@@ -51,10 +51,12 @@ title: Procedimiento Post-Deployment
 
 * Cargar *ether* a las mismas direcciones en las testnets de Ethereum (Ropsten, Rinkeby, Goerli y Kovan):
 
-	- [**Ropsten**](https://faucet.dimensions.network/)
+	- [**Ropsten**](https://faucet.ropsten.be/)
 	- [**Rinkeby**](https://faucet.rinkeby.io/)
-	- [**Goerli**](https://faucet.goerli.mudit.blog/)
-	- [**Kovan**](https://faucets.chain.link/)
+	- [**Goerli**](https://goerli-faucet.slock.it/)
+	- [**Kovan**](https://gitter.im/kovan-testnet/faucet#)
+
+	Como opción alternativa se puede utilizar el faucet de Metamask - [https://faucet.metamask.io/](https://faucet.metamask.io/)
 
 * Cargar *ether* a las mismas direcciones en **BFA** solicitandoló al canal de Telegram oficial: [https://t.me/bfatec](https://t.me/bfatec).
 
