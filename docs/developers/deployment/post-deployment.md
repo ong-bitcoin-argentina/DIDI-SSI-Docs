@@ -49,7 +49,18 @@ title: Procedimiento Post-Deployment
 		#C.3. Dirección para refill automático de la wallet C.1.
 		export RONDA_REFILL_ORIGIN_ACCOUNT="0xa4ad4b5a84b25a6b254ac5e051980eeebbe6ba1f"
 
-* Cargarle *ether* a las mismas direcciones en **BFA** solicitandoló al canal de Telegram oficial: [https://t.me/bfatec](https://t.me/bfatec).
+* Cargar *ether* a las mismas direcciones en las testnets de Ethereum (Ropsten, Rinkeby, Goerli y Kovan):
+
+	- [**Ropsten**](https://faucet.ropsten.be/)
+	- [**Rinkeby**](https://faucet.rinkeby.io/)
+	- [**Goerli**](https://goerli-faucet.slock.it/)
+	- [**Kovan**](https://gitter.im/kovan-testnet/faucet#)
+
+	Como opción alternativa se puede utilizar el faucet de Metamask - [https://faucet.metamask.io/](https://faucet.metamask.io/)
+
+* Cargar *ether* a las mismas direcciones en **BFA** solicitandoló al canal de Telegram oficial: [https://t.me/bfatec](https://t.me/bfatec).
+
+
 
 **c. Procedimiento:** Se debe realizar una llamada a la API del *DIDI Server* mediante el siguiente comando (ejemplo de nuestro ambiente de *QA*):
 
