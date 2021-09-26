@@ -11,16 +11,19 @@ Actualmente contamos con 3 canales de distribución **Pruebas internas**, **Prue
 
 ### Pruebas internas
 Este canal está dedicado a devs y testers que deseen probar nuevos features durante su desarrollo. En caso de darte de alta en este canal, no olvides contactar al equipo de desarrollo para ayudarte con la configuración.
-
-* [aidi](https://play.google.com/apps/internaltest/4699792894966829510)
-* [ronda](https://play.google.com/apps/internaltest/4698214270068764420)
+* aidi: 
+    * [web](https://play.google.com/apps/internaltest/4699792894966829510) 
+    * [playstore](https://play.google.com/apps/test/com.aidi/40)
+* ronda: 
+    * [web](https://play.google.com/apps/internaltest/4698214270068764420)
+    * [playstore](https://play.google.com/store/apps/details?id=com.aidironda2)
 
 ### Pruebas cerradas
 Las pruebas cerradas se utilizan para probar las últimas features, y su integración con el resto de las funcionalidades.
 Para comenzar a participar de las pruebas cerradas, date de alta a través de los siguientes links:
 * aidi: 
     * [web](https://play.google.com/apps/testing/com.aidi) 
-    * [playstore](https://play.google.com/store/apps/details?id=com.aidi)
+    * [playstore](https://play.google.com/apps/test/com.aidi/38)
 * ronda: 
     * [web](https://play.google.com/apps/testing/com.aidironda2)
     * [playstore](https://play.google.com/store/apps/details?id=com.aidironda2)
@@ -31,7 +34,7 @@ Las pruebas abiertas son el último paso antes de lanzar a producción. En este 
 Para comenzar con este canal, podés darte de alta en los siguientes links:
 * aidi: 
     * [web](https://play.google.com/apps/testing/com.aidi)
-    * [android](https://play.google.com/store/apps/details?id=com.aidi)
+    * [playstore](https://play.google.com/apps/test/com.aidi/41)
 
 * ronda: 
     * [web](https://play.google.com/apps/testing/com.aidironda2)
