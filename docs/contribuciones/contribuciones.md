@@ -10,35 +10,16 @@ Actualmente contamos con 3 canales de distribución **Pruebas internas**, **Prue
 ![Ambientes y canales](../images/servers-y-canales.png)
 
 ### Pruebas internas
-Este canal está dedicado a devs y testers que deseen probar nuevos features durante su desarrollo. En caso de darte de alta en este canal, no olvides contactar al equipo de desarrollo para ayudarte con la configuración.
-* aidi: 
-    * [web](https://play.google.com/apps/internaltest/4699792894966829510) 
-    * [playstore](https://play.google.com/apps/test/com.aidi/40)
-* ronda: 
-    * [web](https://play.google.com/apps/internaltest/4698214270068764420)
-    * [playstore](https://play.google.com/store/apps/details?id=com.aidironda2)
+Está dedicado a devs y testers que deseen probar nuevos features durante su desarrollo. En caso de darte de alta en este canal, no olvides contactar al equipo de desarrollo para ayudarte con la configuración.
 
 ### Pruebas cerradas
 Las pruebas cerradas se utilizan para probar las últimas features, y su integración con el resto de las funcionalidades.
-Para comenzar a participar de las pruebas cerradas, date de alta a través de los siguientes links:
-* aidi: 
-    * [web](https://play.google.com/apps/testing/com.aidi) 
-    * [playstore](https://play.google.com/apps/test/com.aidi/38)
-* ronda: 
-    * [web](https://play.google.com/apps/testing/com.aidironda2)
-    * [playstore](https://play.google.com/store/apps/details?id=com.aidironda2)
-
  
 ### Pruebas abiertas
 Las pruebas abiertas son el último paso antes de lanzar a producción. En este punto la estabilidad de los features es óptima, se utiliza principalmente para detectar problemas de uso y estabilidad en la integración con lo ya desarrollado.
-Para comenzar con este canal, podés darte de alta en los siguientes links:
-* aidi: 
-    * [web](https://play.google.com/apps/testing/com.aidi)
-    * [playstore](https://play.google.com/apps/test/com.aidi/41)
 
-* ronda: 
-    * [web](https://play.google.com/apps/testing/com.aidironda2)
-    * [playstore](https://play.google.com/store/apps/details?id=com.aidironda2)
+Para probar o testear las distintas apps en cada ambiente seguí el siguiente link:
+[Apks de las apps](https://drive.google.com/drive/folders/16U0-fy8XUA6LafRIOboGspGgPny0YWfR?usp=sharing).
 
 ## Reporte de errores
 
