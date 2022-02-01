@@ -38,6 +38,6 @@ module.exports = {
       { "Multiblockchain": ['developers/multiblockchain/multiblockchain', 'developers/multiblockchain/multiblockchain-scripts',] }
     ],
 
-    "Changelog": ['changelog/v0.7.x','changelog/v0.6.x','changelog/v0.5.x'],
+    "Changelog": ['changelog/v0.8.x','changelog/v0.7.x','changelog/v0.6.x','changelog/v0.5.x'],
   },
 };
