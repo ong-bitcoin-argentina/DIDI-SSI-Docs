@@ -7,15 +7,16 @@ title: Introducción a la identidad auto-soberana
 La identidad auto-soberana (SSI | Self Sovereign Identity) es un movimiento digital que reconoce que los individuos deben sean los únicos dueños de su identidad, teniendo el control sobre cómo se comparten y utilizan sus datos personales.
 
 En 2016, Christopher Allen estableció los 10 principios para la identidad auto-soberana que se han convertido en una referencia en el campo. Estos principios son:
-- **Acceso:** Los usuarios deben tener acceso a sus propios datos.
-- **Consentimiento:** Los usuarios deben aceptar previamente el uso de su identidad por terceros.
-- **Control:** Los usuarios deben poder controlar sus identidades.
-- **Existencia:** Los usuarios deben tener una existencia independiente.
-- **Interoperabilidad:** Las identidades deben poder utilizarse ampliamente.
-- **Minimización:** La divulgación de reclamaciones debe reducirse.
-- **Persistencia:** Las identidades deben ser duraderas. Protección: los derechos de los usuarios deben ser protegidos.
-- **Portabilidad:** La información y los servicios sobre identidad deben ser portables.
-- **Transparencia:** Los sistemas y algoritmos deben ser transparentes.
+- **Existencia** Los usuarios deben tener una existencia independiente al sistema subyacente.
+- **Control** Los usuarios deben controlar sus identidades, siendo la autoridad máxima sobre su identidad. Siempre deben poder consultarla, actualizarla u ocultarla. Se debe poder elegir si son públicas o privadas.
+- **Acceso** Los usuarios deben tener fácil acceso a su propia información. No debe existir información oculta.
+- **Transparencia**: Los sistemas y algoritmos utilizados deben ser transparentes. Tanto en su operación como en la forma en que se actualizan.
+- **Persistencia** Las identidades deben durar tanto como el usuario desee. Las claves privadas pueden rotar, y los datos cambiar.
+- **Portabilidad** La información y los servicios sobre la identidad deben ser transportables. Las identidades no deben ser mantenidas únicamente por terceros.
+- **Interoperabilidad** El objetivo es que la información sea utilizada ampliamente.
+- **Consentimiento** El intercambio de datos solo debe ocurrir con el consentimiento del usuario.
+- **Minimización** Cuando se divulgan datos, debe involucrarse la cantidad mínima de datos necesaria para realizar la tarea en cuestión.
+- **Protección** Los derechos de los usuarios se deben proteger. En caso de conflicto de intereses, se debe favorecer los derechos individuales.
 
 Estos principio nos dan una idea general de que la identidad auto-soberana se basa en repositorios personales portables en los que podemos almacenar y administrar todas nuestras claves  privadas, nuestros autenticadores y nuestros tokens y credenciales digitales de manera segura y confiable.
 
