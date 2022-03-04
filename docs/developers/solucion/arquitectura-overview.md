@@ -11,9 +11,9 @@ Se describen a continuación los componentes de Proyecto DIDI. Para mayor detall
 
 El issuer es la aplicación para emisores DIDI que permite la creación de templates, pre credenciales y emisión de credenciales. Una vez emitidas las credenciales se almacenan en Mouro y son accedidas por los usuarios desde ai·di.
 
-[**Repositorio backend**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Issuer-Module)
+[**Repositorio backend**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Issuer-module-backend)
 
-[**Repositorio frontend**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Issuer-Module)
+[**Repositorio frontend**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Issuer-module-frontend)
 
 ## DIDI Credential Viewer/Validator
 
@@ -53,6 +53,14 @@ DIDI Server es el componente CENTRAL de Proyecto DIDI. Su responsabilidades son:
 
 [**Repositorio**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Server)
 
+
+## DIDI Indentity
+
+Es usado desde la app mobile ai·di via la DIDI App SDK para crear y cancelar una verificación de usuario y móvil.
+
+[**Repositorio**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Identity-issuer)
+
+
 ## Entorno de ejecución
 
 El entorno de ejecución de los componentes se encuentra descirpto mediante el siguiene diagrama:
@@ -61,6 +69,6 @@ El entorno de ejecución de los componentes se encuentra descirpto mediante el s
 
 El **visor de credenciales** y el **Issuer front** son 2 aplicaciones para navegador, desarrolladas en React. Por otro lado, la **wallet ai·di** y **ronda** se encuentran desarrolladas en React Native, con soporte sólo para Android.
 
-El **backend del visor de credenciales**, el **Issuer back**, **DIDI server**, **ronda server** y **Mouro** se encuentran dockerizados, corriendo en una máquina virtual Azure.
+El **Visor Backend de credenciales**, el **Issuer Server**, **DIDI Server**, **Ronda Server**, **DIDI Mouro**, **Identity**, **Redis**, **MongoDB** y **Swarm** se encuentran dockerizados, corriendo en una máquina virtual Azure.
 
 En cuanto a **Blockchain**, se encuentran en uso los **uPort ethr registry** en **RSK**, **BFA** y **LACChain**. Además **ronda** utiliza **RIF Name Service** y **Ronda Registry** en **RSK**.
