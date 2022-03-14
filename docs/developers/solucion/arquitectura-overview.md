@@ -54,9 +54,9 @@ DIDI Server es el componente CENTRAL de Proyecto DIDI. Su responsabilidades son:
 [**Repositorio**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Server)
 
 
-## DIDI Indentity
+## DIDI Identity
 
-Es usado desde la app mobile ai·di via la DIDI App SDK para crear y cancelar una verificación de usuario y móvil.
+Es usado para validar la identidad de un usuario.
 
 [**Repositorio**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Identity-issuer)
 
