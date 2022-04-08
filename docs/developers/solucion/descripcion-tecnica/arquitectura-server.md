@@ -6,10 +6,36 @@ title: Server
 DIDI-SSI-Server es el nodo central de ai·di, permite almacenar los datos de recuperación de usuario y actúa como intermediario entre los demás módulos y Mouro, validando certificados y evitando que issuers no autorizados puedan emitir certificados.
 Se encuentra desarrollando en NodeJS y ExpressJs y almacena sus datos en MongoDB.
 
+### Overview
+A continuación se muestra la interacción del server con otros servicios, librerías y web app
+
+![Server overview](../../../images/didi-ssi-server-overview.png)
+
+
+### Componentes Server backend
+A continuación se muestra un detalle de los componentes dentro del server backend.
+
 ![Server](../../../images/didi-ssi-server.png)
 Los diferentes colores en las líneas no tienen un signifaco específico. Es para seguir con mayor facilidad las dependencias. **A -> B** representa que el módulo **A** utiliza a **B**
 
+
+### Repositorios
+
+- [**Server backend**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Server)
+    
+- [**App movil**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Mobile)
+
+- [**Indentity backend**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Identity-issuer)
+
+- [**Validador de credenciales frontend y backend**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-JWT_validator_viewer)
+
+
+### Swagger url
+
+[**api docs**](https://api.alpha.didi.org.ar/api-docs/)
+
 ### Rutas
+
 #### /admin
 Se utilizan para obtener información confidencial de los usuarios. Están protegidas por un middleware que valida que el JWT pertenezca a un Admin.
 > /admin/user/did/:did - Obtener información confidencial sobre el usuario según su did

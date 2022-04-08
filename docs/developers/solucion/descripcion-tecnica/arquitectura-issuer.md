@@ -7,15 +7,36 @@ DIDI-SSI-Issuer-module es una herramienta que permite generar y emitir credencia
 
 El backend se encuentra desarrollado en NodeJS y ExpressJs utiliza MongoDB para almacenar sus datos.
 
+Blockchain Manager es una librería que se encarga de manejar la comunicación con la Blockchain y Logger es una librería que prentende centralizar los logs en azure. 
+
+
+
+### Overview
+A continuación se muestra la interacción del issuer con otros servicios y librerías 
+
+![Issuer overview](../../../images/didi-ssi-issuer-overview.png)
+
+
 Dentro del código, se encuentra el termino "certificado", jwt que hacen referencia a las credenciales verificables o VC.
+
+### Componentes Issuer backend
+A continuación se muestra un detalle de los componentes dentro del issuer backend.
 
 ![Issuer backend](../../../images/didi-ssi-issuer-back.png)
 > Los diferentes colores en las líneas no tienen un signifaco específico. Es para seguír con mayor facilidad las dependencias. **A -> B** representa que el módulo **A** utiliza a **B**
 
-**Repo**
-- https://github.com/ong-bitcoin-argentina/DIDI-SSI-Issuer-Module
+### Repositorios
+
+- [**Repositorio backend**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Issuer-module-backend)
+
+- [**Repositorio frontend**](https://github.com/ong-bitcoin-argentina/DIDI-SSI-Issuer-module-frontend)
+
+### Swagger url
+
+[**api docs**](https://api.issuer.alpha.didi.org.ar/api-docs/)
 
 ### Rutas
+
 #### /user
 Este conjunto de rutas se crean, modifican y eliminan usuarios y administradores.
 Dentro de estas rutas se encuentra el endpoint securaizado para crear el primer admin.
