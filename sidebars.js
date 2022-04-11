@@ -40,7 +40,7 @@ module.exports = {
 
     "Changelog": [ 
       {"Sistema": ['changelog-system/v0.8.x','changelog-system/v0.7.x','changelog-system/v0.6.x','changelog-system/v0.5.x']},
-      {"ai·di": ['changelog-aidi/v1.5.x',]},
+      {"ai·di": ['changelog-aidi/v1.6.x','changelog-aidi/v1.5.x']},
     ],
   },
 };
