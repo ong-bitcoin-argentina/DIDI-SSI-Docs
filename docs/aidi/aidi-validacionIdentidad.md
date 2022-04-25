@@ -44,11 +44,12 @@ Una vez concluido satisfactoriamente el proceso muestra los datos recaudados, de
 | 6    |                                                                           | Valida que la imagen es correcta                                                      |
 | 7    | Saca foto prueba de vida                                                  |                                                                                       |
 | 8    |                                                                           | Comprueba que la imagen atiende los requisitos necesarios para validar la información |
-| 9    | Controla la información previo envio al servicio de validación            |                                                     |                                                                                       |
-| 10   |                                                                           | Validación y registro de información                |                                                                                       |
-| 11   |                                                                           | Creación y emisión de dos credenciales de identidad |                                                                                       |
-| 12   | Recepción y visualización de credenciales de identidad                    |                                                     |                                                                                       |
-
+| 8    |                                                                           |  Solicita la información de los datos del documento, extrae los datos de la foto frontal , dorsal, y del código de barra, e envia la informacion  |
+| 9    | observa que sus datos este correctamente                                  |                                                                                       | 
+| 10   |                                                                           | Validación la identidad del Actor, registro de información emisión de dos credenciales de identidad         |
+| 11    | Verifica el estado de la validación de identidad                          |                                                                                       |
+| 12   |                                                                           | redirecciona a dashboard si la validación es exitoso                                              |
+| 13   | Recepción y visualización de credenciales de identidad                    |                                                                                       |
 
 ### Validación alternativa por parte del emisor
 Dado que la validación de identidad puede ser un requerimiento necesario por parte de un emisor previo a la emisión de las credenciales a ese individuo, existiría un bloqueante en aquellos escenarios en los que un usuario no pueda validar su identidad. Esto puede suceder, por ejemplo, porque la API del servicio de validación biométrica no reconoce correctamente la información del usuario, o porque cuentan con la cámara del dispositivo averiada.
