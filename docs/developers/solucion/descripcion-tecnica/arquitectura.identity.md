@@ -6,6 +6,15 @@ title: Identity
 DIDI-SSI-Identity-Issuer es una herramienta que permite validar un documento de identidad. Se encarga de enviar los datos del usuario, incluyendo las imagenes del dni y una selfie a VU Security para ser validados. 
 Se encuentra desarrollando en NodeJS y ExpressJs y almacena sus datos en MongoDB.
 
+### Diagrama de Secuencias
+A continuación se muestra el diagrama de secuencias del proceso de validación de identidad.
+
+![Identity Diagrama de Secuencias](../../../images/identityValidation-ValidateIdentity.png)
+
+
+A continuación se muestra el diagrama de secuencias del proceso de creación y emisión de credenciales.
+
+![Identity Diagrama de Secuencias](../../../images/identityValidation-EmmitCredentials.png)
 
 ### Repositorios
 
