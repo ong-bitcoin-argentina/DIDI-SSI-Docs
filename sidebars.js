@@ -21,6 +21,7 @@ module.exports = {
               'developers/solucion/descripcion-tecnica/arquitectura-mouro',
               "developers/solucion/descripcion-tecnica/arquitectura-issuer",
               "developers/solucion/descripcion-tecnica/arquitectura-server",
+              "developers/solucion/descripcion-tecnica/arquitectura-identity",
               "developers/solucion/descripcion-tecnica/arquitectura-ronda",
               "developers/solucion/descripcion-tecnica/delegation",
             ]
